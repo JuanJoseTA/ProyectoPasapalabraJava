@@ -3,7 +3,7 @@ Este es el repositorio del proyecto de los pibes para la asignatura Introducció
 =======
 Pablo Frías Campos
 Juan Antonio Gutiérrez Bermúdez
-Carlos Ramírez Rodríguez de Sepúlveda
 Juan Jose Tirado Arregui
+Carlos Ramirez Rodriguez de Sepulveda
 
 

@@ -4,6 +4,6 @@ Este es el repositorio del proyecto de los pibes para la asignatura Introducció
 Pablo Frías Campos
 Juan Antonio Gutiérrez Bermúdez
 Juan Jose Tirado Arregui
-Carlos Ramirez Rodriguez de Sepulveda
+Carlos Ramirez Rodriguez de Sepulved
 Carlos Pino Padilla
 

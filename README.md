@@ -7,3 +7,4 @@ Juan Jose Tirado Arregui
 Carlos Ramirez Rodriguez de Sepulveda
 Carlos Pino Padilla
 Javier Luque Rueda
+Joaquín Ruiz Álvarez

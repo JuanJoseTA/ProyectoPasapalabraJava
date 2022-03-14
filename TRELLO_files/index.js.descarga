@@ -1,0 +1,86 @@
+(function () {
+    var P = TrelloPowerUp.Promise;
+
+    TrelloPowerUp.initialize({
+        'card-buttons': function(t, card) {
+            return [{
+                icon: './images/kiwi_silhouette.svg',
+                text: "FogBugz",
+                callback: function (t) {
+                    t.modal({
+                        url: './searchbox.html',
+                        title: 'Search FogBugz Cases',
+                        height: 552,
+                        fullscreen: false,
+                        args: { showSearch: true }
+                    });
+                }
+            }];
+        },
+
+        'show-settings': function (t, board) {
+            t.modal({ url: './searchbox.html', title: 'Settings', height: 293, fullscreen: false });
+        },
+
+        'attachment-sections': function(t, options) {
+            return FTUtil.makeBugList(t, options.entries)
+            .then(function (current) {
+                if (current.bugs.length === 0) {
+                    return [];
+                }
+
+                return {
+                    claimed: current.bugs,
+                    icon: './images/kiwi_silhouette.svg',
+                    title: current.title,
+                    content: {
+                        type: 'iframe',
+                        url: t.signUrl('./caselist.html')
+                    }
+                };
+            });
+        },
+
+        'card-badges': function(t, options) {
+            return t.card("attachments")
+            .then(function (card) {
+                return FTUtil.makeBugList(t, card.attachments);
+            })
+            .then(function (bugList) {
+                if (bugList.bugs.length > 0) {
+                    return [{
+                        icon: './images/kiwi-small.svg',
+                        text: bugList.bugs.length
+                    }];
+                }
+                return [];
+            });
+        },
+
+        'format-url': function (t, options) {
+            var ixBug;
+            return FTUtil.getFBInfo(t)
+            .then(function (opts) {
+                ixBug = FTUtil.urlToIxBug(opts.site, options.url);
+                if (ixBug) {
+                    return FTUtil.getRequest(opts.site + "f/api/0/casetitle/" + ixBug, { token: opts.token }, "json")
+                    .then(function (results) {
+                        if (results.data.sTitle === undefined) throw "Case does not exist";
+                        return {
+                            icon: "./images/kiwi.svg",
+                            text: "Case " + ixBug + ": " + results.data.sTitle
+                        };
+                    })
+                    .catch(function (err) {
+                        return {
+                            icon: "./images/kiwi.svg",
+                            text: "Case " + ixBug
+                        };
+                    });
+                }
+
+                throw t.NotHandled("Not my case");
+            });
+        }
+    });
+})();

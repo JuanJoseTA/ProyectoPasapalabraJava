@@ -1,0 +1,151 @@
+﻿(function () {
+    var ixBugRegex = /^\d+/;
+
+    var FTUtil = window.FTUtil = {
+        makeRequest: function (fn, url, data, type) {
+            return new TrelloPowerUp.Promise(function (resolve, reject) {
+                fn(url, data, null, type)
+                .done(resolve)
+                .fail(reject);
+            });
+        },
+        getRequest: function (url, data, type) {
+            return FTUtil.makeRequest($.get, url, data, type);
+        },
+        postRequest: function (url, data, type) {
+            return FTUtil.makeRequest($.post, url, data, type);
+        },
+        getTokens: function (t) {
+            return t.get("organization", "private", "token", false)
+            .then(function (tokens) {
+                if (tokens) {
+                    return tokens;
+                }
+                return t.get("board", "private", "token", {});
+            });
+        },
+        addToken: function (t, site, token) {
+            var tokens;
+            return FTUtil.getTokens(t)
+            .then(function (data) {
+                tokens = data;
+                tokens[site] = token;
+                return t.set("organization", "private", "token", tokens);
+            })
+            .catch(function (err) { return err.code === "not handled"; }, function () {
+                return t.set("board", "private", "token", tokens);
+            });
+        },
+        getFBInfo: function (t) {
+            var site;
+            return t.get("board", "shared", "site", "")
+            .then(function (arg) {
+                site = arg;
+                return FTUtil.getTokens(t);
+            })
+            .then(function (tokens) {
+                return { site: site, token: tokens[site] };
+            });
+        },
+        startsWith: function (str, prefix) {
+            return str.substring(0, prefix.length) == prefix;
+        },
+        urlToIxBug: function (site, url) {
+            if (site.search("fogbugz.com") != -1) {
+                url = url.replace("manuscript.com", "fogbugz.com");
+            } else if (site.search("manuscript.com") != -1) {
+                url = url.replace("fogbugz.com", "manuscript.com");
+            }
+            var bugPrefix = site + "f/cases/";
+            if (FTUtil.startsWith(url, bugPrefix)) {
+                var res = url.substring(bugPrefix.length).match(ixBugRegex);
+                return res && res[0];
+            }
+            return null;
+        },
+        caseAttachments: function (site, attachments) {
+            var out = [];
+            attachments = _.each(attachments, function (entry) {
+                var ixBug = FTUtil.urlToIxBug(site, entry.url);
+                if (ixBug) {
+                    out.push({
+                        id: entry.id,
+                        url: entry.url,
+                        ixBug: ixBug,
+                        name: ""
+                    });
+                }
+            });
+            return out;
+        },
+        makeBugList: function (t, attachments) {
+            return FTUtil.getFBInfo(t)
+            .then(function (opts) {
+                var bugs = FTUtil.caseAttachments(opts.site, attachments);
+
+                    return {
+                        title: "FogBugz",
+                        site: opts.site,
+                        bugs: bugs,
+                        token: opts.token
+                    };
+                });
+        },
+        round: function (n, places) {
+            var power = Math.pow(10, places);
+            return Math.round(n * power) / power;
+        },
+        pluralize: function (n, singular, plural) {
+            return "{0} {1}".format(n, n !== 1 ? plural : singular);
+        },
+        ppHours: function (hrs) {
+            if (hrs < 0) {
+                hrs = 0;
+            }
+            return FTUtil.pluralize(FTUtil.round(hrs, 2), "hour", "hours");
+        }
+    };
+
+    /*
+     * Implements string formatting.
+     *
+     * "{0} {name}!".format("Hello", {name: "world"}) --> "Hello world!"
+     *
+     * {\d+}: replaced by positional arguments.
+     * {\w+}: replaced by the properties of the last argument.
+     */
+    String.prototype.format = function format() {
+        "use strict";
+
+        function last(xs) {
+            if (xs.length) {
+                return xs[xs.length - 1];
+            }
+
+            return null;
+        }
+
+        function missingToBlank(val) {
+            if (val === undefined) {
+                return "";
+            }
+
+            return val;
+        }
+
+        var context = last(arguments) || {};
+        var args = arguments;
+        return this.replace(/\{(\w+)\}/g, missingToBlank(function (_, match) {
+            function value(key) {
+                var index = parseInt(key, 10);
+                if (!isNaN(index)) {
+                    return args[index];
+                }
+
+                return context[key];
+            }
+
+            return missingToBlank(value(match));
+        }));
+    };
+})();

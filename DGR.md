@@ -1,21 +1,18 @@
-# Introduction
-## References
+# Historial de revisiones
 
-# Positioning
-## Problem Statement
-## Product Position Statement
+# Introducción
+## Propósito
+## Alcance
+## Visión general
 
-# Stakeholder and User Descriptions
-## Stakeholder Summary
-## User Summary
-## User Environment
-## Summary of Key Stakeholder or User Needs
-## Alternatives and Competition
+# Descripción general del producto
+## Funciones del producto
+## Suposiciones y dependencias
+## Restricciones
+## Requisitos futuros
 
-# Product Overview
-## Product Perspective
-## Assumptions and Dependencies
+# Requerimientos específicos
+## Requisitos funcionales
+## Requisitos no funcionales
 
-# Product Features
-
-# Other Product Requirements
+# Apéndices adicionales

@@ -9,4 +9,4 @@ Este es el repositorio del proyecto de los pibes para la asignatura Introducció
 * Javier Luque Rueda
 * Joaquín Ruiz Álvarez
 * Roberto Gil López
-
+* Mario Bernaldez Rodriguez

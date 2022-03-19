@@ -41,8 +41,10 @@
 * RNF01 El sistema estara soportado por PC.
 * RNF02 La batería de palabras estará almacenada en una base de datos.
 * RNF03 Los jugadores tendran un maximo de 10 segundos para responder cada pregunta.
-* RNF04 El sistema no distingue entre mayúsculas y minúsculas en la entrada por teclado.
+* RNF04 El sistema no distingue entre mayúsculas y minúsculas.
 * RNF05 El sistema no reconerá las tildes, por lo que es uso de tildes será respuesta incorrecta.
-
+* RNF06 La temática del juego será orientada al conocimiento deportivo.
+* RNF07 Las respuestas deben contener o comenzar por la letra correspondiente al turno.
+* RNF08 El sistema recibe la respuesta en la entrada por teclado.
 
 # Apéndices adicionales

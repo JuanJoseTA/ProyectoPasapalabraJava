@@ -21,30 +21,38 @@
 * RF05 Debe lanzarse la primera pregunta de la primera letra al jugador 1.
 * RF06 Deberá haber un rebote para que el otro jugador tenga la oportunidad de ganar la letra.
 * RF07 Deberá pasar a la siguiente letra haya acierto o fallo, llevandose la letra o no cualquiera de los jugadores.
-* RF08 Al acabar cada ronda , que corresponde con una letra del abecedario, debe saltar a la siguiente letra lanzando la primera pregunta de esta al jugador correspondiente.
-* RF09 Deberá ganar siempre un jugador.
-* RF10 Deberá haber preguntas extras con letras aleatorias.
-* RF11 La respuesta debe ser introducida por teclado.
-* RF12 En la interfaz, los aciertos saldrán en verde y los fallos en rojo.
-* RF13 Deberá aparecer a la izquierda las preguntas del jugador1.
-* RF14 Deberá aparecer a la derecha las preguntas del jugador2.
-* RF15 Deberá aparecer la letra que se está respondiendo en la parte central de la interfaz.
-* RF16 Deberá mostrarse en la interfaz el jugador ganador.
+* RF08 Al acabar cada ronda se pasará a la siguiente letra, y se deberá mostrar por pantalla la pregunta al jugador correspondiente. 
+* RF09 La respuesta debe ser introducida por teclado.
+* RF10 En la interfaz, en los aciertos deberá mostrarse por pantalla "CORRECTO".
+* RF11 A su vez, en los errores deberá mostrarse por pantalla "INCORRECTO"
+* RF12 Deberá aparecer a la izquierda las preguntas del jugador1.
+* RF13 Deberá aparecer a la derecha las preguntas del jugador2.
+* RF14 Deberá aparecer la letra que se está respondiendo en la parte central de la interfaz.
+* RF15 Deberá mostrarse el resultado del juego mostrando por pantalla el ganador en caso de que lo haya.
+* RF16 Cada letra debe tener asignada una pregunta como mínimo.
+* RF17 En una letra aleatoria deberá mostrarse por pantalla el mensaje : "Las dos próximas letras tendrán bonus".
+* RF18 Cada jugador deberá tener asociado un contador con el número de aciertos (puntos) que lleva en el juego.
+* RF19 Se deberá mostrar por pantalla el número de aciertos de cada jugador.
 
 
 ### Extra:
 * RF Deberá haber una letra aleatoria con bonus (da más puntos).
 * RF Las letras acertadas aparecen en la parte de la interfaz correspondiente a ese jugador.
+* RF En los aciertos se deberá mostrar por pantalla el color verde.
+* RF A su vez, en los errores deberá mostrarse por pantalla el color rojo.
+* RF Deberá ganar siempre un jugador.
+* RF Deberá haber preguntas extras con letras aleatorias.
 
 
 ## Requisitos no funcionales
-* RNF01 El sistema estara soportado por PC.
+* RNF01 El sistema estará soportado por PC.
 * RNF02 La batería de palabras estará almacenada en una base de datos.
-* RNF03 Los jugadores tendran un maximo de 10 segundos para responder cada pregunta.
+* RNF03 Los jugadores tendrán un maximo de 10 segundos para responder cada pregunta.
 * RNF04 El sistema no distingue entre mayúsculas y minúsculas.
-* RNF05 El sistema no reconerá las tildes, por lo que es uso de tildes será respuesta incorrecta.
+* RNF05 El sistema no reconocerá las tildes, por lo que el uso de tildes será respuesta incorrecta.
 * RNF06 La temática del juego será orientada al conocimiento deportivo.
 * RNF07 Las respuestas deben contener o comenzar por la letra correspondiente al turno.
 * RNF08 El sistema recibe la respuesta en la entrada por teclado.
+* RNF09 
 
 # Apéndices adicionales

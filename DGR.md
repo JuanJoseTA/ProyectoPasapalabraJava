@@ -42,6 +42,7 @@
 * RNF02 La batería de palabras estará almacenada en una base de datos.
 * RNF03 Los jugadores tendran un maximo de 10 segundos para responder cada pregunta.
 * RNF04 El sistema no distingue entre mayúsculas y minúsculas en la entrada por teclado.
+* RNF05 El sistema no reconerá las tildes, por lo que es uso de tildes será respuesta incorrecta.
 
 
 # Apéndices adicionales

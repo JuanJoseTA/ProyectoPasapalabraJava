@@ -19,7 +19,7 @@
 * RF03 Debe empezar el jugador 1.
 * RF04 En cada letra se deberá alternar el orden de inicio entre los jugadores.
 * RF05 Debe lanzarse la pregunta de la primera letra al jugador 1.
-* RF06 Deberá haber un rebote para que el otro jugador tenga la oportunidad de ganar la letra.
+* RF06 Deberá haber un rebote en caso del que el primer jugador en responer falle, para que el otro jugador tenga la oportunidad de ganar la letra.
 * RF07 Deberá pasar a la siguiente letra haya acierto o fallo, llevándose la letra o no cualquiera de los jugadores.
 * RF08 Al acabar cada ronda se pasará a la siguiente letra.
 * RF09 Se deberá mostrar por pantalla la pregunta al jugador correspondiente. 
@@ -35,6 +35,10 @@
 * RF19 El bonus deberá tener una puntuación doble.
 * RF20 Cada jugador deberá tener asociado un contador con el número de aciertos (puntos) que lleva en el juego.
 * RF21 Se deberá mostrar por pantalla el número de aciertos de cada jugador.
+* RF22 Al mostrar la letra a responder, debe haber un mensaje indicando si la respuesta empieza o contiene la letra.
+* RF23 Deberá estar señalizado a quién le toca responder en cada momento.
+* RF24 Deberá haber una cuenta atrás de 10 segundos que comienze al mostrar la pregunta, y se resetee al cambiar el turno
+* RF25 Al terminar la cuenta atrás, deberá darse como incorrecta la pregunta, y mostrar por pantalla "¡TIEMPO!".
 RESUMEN REQUISITOS FUNCIONALES:
     RFO2->NOMBRE JUGADOR
     RF03->JUGADOR 1 EMPIEZA
@@ -56,6 +60,11 @@ RESUMEN REQUISITOS FUNCIONALES:
     RF19->PUNTUACIÓN BONUS
     RF20->CONTADOR ACIERTOS
     RF21->ACIERTOS TOTALES
+    RF22->EMPIEZA O CONTIENE
+    RF23->TURNO
+    RF24->CUENTA ATRÁS
+    RF25->EXCESO TIEMPO
+
 ### Extra:
 * RF Deberá haber una letra aleatoria con bonus (da más puntos).
 * RF Las letras acertadas aparecen en la parte de la interfaz correspondiente a ese jugador.
@@ -63,6 +72,7 @@ RESUMEN REQUISITOS FUNCIONALES:
 * RF A su vez, en los errores deberá mostrarse por pantalla el color rojo.
 * RF Deberá ganar siempre un jugador.
 * RF Deberá haber preguntas extras con letras aleatorias.
+* RF Deberá mostrar al final de la partida, el tiempo utilizado por cada uno de los jugadores.
 
 
 ## Requisitos no funcionales
@@ -74,6 +84,7 @@ RESUMEN REQUISITOS FUNCIONALES:
 * RNF06 La temática del juego será orientada al conocimiento deportivo.
 * RNF07 Las respuestas deben contener o comenzar por la letra correspondiente al turno.
 * RNF08 El sistema recibe la respuesta en la entrada por teclado.
+* RNF09 El tiempo restante para responder se mostrará en el formato de segundos.
 RESUMEN REQUISITOS NO FUNCIONALES:
     RNF01->SOPORTE
     RNF02->ALMACENAMIENTO PALABRAS

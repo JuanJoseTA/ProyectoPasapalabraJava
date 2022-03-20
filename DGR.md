@@ -39,7 +39,7 @@
 * RF23 Deberá estar señalizado a quién le toca responder en cada momento.
 * RF24 Deberá haber una cuenta atrás de 10 segundos que comienze al mostrar la pregunta, y se resetee al cambiar el turno
 * RF25 Al terminar la cuenta atrás, deberá darse como incorrecta la pregunta, y mostrar por pantalla "¡TIEMPO!".
-RESUMEN REQUISITOS FUNCIONALES:
+* RESUMEN REQUISITOS FUNCIONALES:
     RFO2->NOMBRE JUGADOR
     RF03->JUGADOR 1 EMPIEZA
     RF04->ORDEN ALTERNADO
@@ -85,7 +85,7 @@ RESUMEN REQUISITOS FUNCIONALES:
 * RNF07 Las respuestas deben contener o comenzar por la letra correspondiente al turno.
 * RNF08 El sistema recibe la respuesta en la entrada por teclado.
 * RNF09 El tiempo restante para responder se mostrará en el formato de segundos.
-RESUMEN REQUISITOS NO FUNCIONALES:
+* RESUMEN REQUISITOS NO FUNCIONALES:
     RNF01->SOPORTE
     RNF02->ALMACENAMIENTO PALABRAS
     RNF03->TIEMPO RESPUESTA

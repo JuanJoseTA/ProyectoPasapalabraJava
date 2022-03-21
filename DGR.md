@@ -25,7 +25,7 @@
 
 ### 2-RF Respecto al funcionamiento del juego:
 
-    #### 2.1-Sistema de juego:
+#### 2.1-Sistema de juego:
 
         * En cada letra se deberá alternar el orden de inicio entre los jugadores.
         * Deberá haber un rebote en caso del que el primer jugador en responder falle, para que el otro jugador tenga la oportunidad de ganar la letra.
@@ -36,7 +36,7 @@
         * Deberá haber una cuenta atrás de 10 segundos que comienze al mostrar la pregunta, y se resetee al cambiar el turno.
         * La respuesta debe ser introducida por teclado.
 
-    #### 2.2-Interfaz:
+#### 2.2-Interfaz:
 
         * Se deberá mostrar por pantalla la pregunta al jugador correspondiente. 
         * En la interfaz, en los aciertos deberá mostrarse por pantalla "CORRECTO".
@@ -54,29 +54,29 @@
         * En las dos rondas de bonus deberá mostrarse que la puntuación es doble.
         * La cuenta atrás de 10 segundos deberá mostrarse.
 
-    #### 2.3-Puntuacion:
+#### 2.3-Puntuacion:
 
         * Se deberá sumar un punto por cada pregunta respondida correctamente. 
 
-        ##### 2.3.1-Bonus:
+##### 2.3.1-Bonus:
 
             * Deberá ser una ronda normal, donde se ve alterada la puntuación.
             * Las preguntas bonus deberán sumar 2 puntos.
             * La letra de la primera pregunta bonus deberá ser aleatoria.
             * En la siguiente ronda, que corresponde a la siguiente letra del abecedario (exceptuando la ñ), también contendrá bonus.
 
-    #### 2.4-Preguntas:
+#### 2.4-Preguntas:
 
-        ##### 2.4.1-Características:
+##### 2.4.1-Características:
 
             * Debe haber mínimo una pregunta por cada letra del abecedario (exceptuando la ñ).
 
-        ##### 2.4.2-Tipos:
+##### 2.4.2-Tipos:
 
             * Debe haber definiciones que se deben adivinar.
             * Debe haber preguntas que deben ser respondidas con una única palabra.
 
-        ##### 2.4.3-Respuestas:
+##### 2.4.3-Respuestas:
 
             * Se tendrán en cuenta las tildes.
             * La ñ no puede formar parte de la respuesta.

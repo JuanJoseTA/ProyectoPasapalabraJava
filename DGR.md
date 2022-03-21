@@ -18,70 +18,70 @@
 
 ###  1-RF Respecto a los jugadores:
 
-    * Deben poder jugar dos usuarios simultáneamente.
-    * Los usuarios deben poder acceder aportando su nombre de jugador.
-    * El jugador 1 será el primer nombre introducido.
-    * Debe empezar el jugador 1.
+* Deben poder jugar dos usuarios simultáneamente.
+* Los usuarios deben poder acceder aportando su nombre de jugador.
+* El jugador 1 será el primer nombre introducido.
+* Debe empezar el jugador 1.
 
 ### 2-RF Respecto al funcionamiento del juego:
 
 #### 2.1-Sistema de juego:
 
-        * En cada letra se deberá alternar el orden de inicio entre los jugadores.
-        * Deberá haber un rebote en caso del que el primer jugador en responder falle, para que el otro jugador tenga la oportunidad de ganar la letra.
-        * Deberá lanzarse la misma pregunta al jugador que no ha respondido primero.
-        * Deberá pasar a la siguiente letra haya acierto o fallo, llevándose la letra o no cualquiera de los jugadores.
-        * Al acabar cada ronda se pasará a la siguiente letra.
-        * Cada jugador deberá tener asociado un contador con el número de aciertos (puntos) que lleva en el juego.
-        * Deberá haber una cuenta atrás de 10 segundos que comienze al mostrar la pregunta, y se resetee al cambiar el turno.
-        * La respuesta debe ser introducida por teclado.
+* En cada letra se deberá alternar el orden de inicio entre los jugadores.
+* Deberá haber un rebote en caso del que el primer jugador en responder falle, para que el otro jugador tenga la oportunidad de ganar la letra.
+* Deberá lanzarse la misma pregunta al jugador que no ha respondido primero.
+* Deberá pasar a la siguiente letra haya acierto o fallo, llevándose la letra o no cualquiera de los jugadores.
+* Al acabar cada ronda se pasará a la siguiente letra.
+* Cada jugador deberá tener asociado un contador con el número de aciertos (puntos) que lleva en el juego.
+* Deberá haber una cuenta atrás de 10 segundos que comienze al mostrar la pregunta, y se resetee al cambiar el turno.
+* La respuesta debe ser introducida por teclado.
 
 #### 2.2-Interfaz:
 
-        * Se deberá mostrar por pantalla la pregunta al jugador correspondiente. 
-        * En la interfaz, en los aciertos deberá mostrarse por pantalla "CORRECTO".
-        * En los errores deberá mostrarse por pantalla "INCORRECTO".
-        * Deberá aparecer a la izquierda las preguntas del jugador1.
-        * Deberá aparecer a la derecha las preguntas del jugador2.
-        * Deberá aparecer la letra que se está respondiendo en la parte central de la interfaz.
-        * Deberá mostrarse el resultado del juego mostrando por pantalla el ganador en caso de que lo haya.
-        * Deberá aparecer la letra que se está respondiendo en la parte central de la interfaz.
-        * Deberá mostrarse el resultado del juego mostrando por pantalla el ganador en caso de que lo haya.
-        * En una letra aleatoria deberá mostrarse por pantalla el mensaje : "Las dos próximas letras tendrán bonus".
-        * Se deberá mostrar por pantalla el número de aciertos de cada jugador.
-        * Al mostrar la letra a responder, debe haber un mensaje indicando si la respuesta empieza o contiene la letra.
-        * Al terminar la cuenta atrás, deberá darse como incorrecta la pregunta, y mostrar por pantalla "¡TIEMPO!".
-        * En las dos rondas de bonus deberá mostrarse que la puntuación es doble.
-        * La cuenta atrás de 10 segundos deberá mostrarse.
+* Se deberá mostrar por pantalla la pregunta al jugador correspondiente. 
+* En la interfaz, en los aciertos deberá mostrarse por pantalla "CORRECTO".
+* En los errores deberá mostrarse por pantalla "INCORRECTO".
+* Deberá aparecer a la izquierda las preguntas del jugador1.
+* Deberá aparecer a la derecha las preguntas del jugador2.
+* Deberá aparecer la letra que se está respondiendo en la parte central de la interfaz.
+* Deberá mostrarse el resultado del juego mostrando por pantalla el ganador en caso de que lo haya.
+* Deberá aparecer la letra que se está respondiendo en la parte central de la interfaz.
+* Deberá mostrarse el resultado del juego mostrando por pantalla el ganador en caso de que lo haya.
+* En una letra aleatoria deberá mostrarse por pantalla el mensaje : "Las dos próximas letras tendrán bonus".
+* Se deberá mostrar por pantalla el número de aciertos de cada jugador.
+* Al mostrar la letra a responder, debe haber un mensaje indicando si la respuesta empieza o contiene la letra.
+* Al terminar la cuenta atrás, deberá darse como incorrecta la pregunta, y mostrar por pantalla "¡TIEMPO!".
+* En las dos rondas de bonus deberá mostrarse que la puntuación es doble.
+* La cuenta atrás de 10 segundos deberá mostrarse.
 
 #### 2.3-Puntuacion:
 
-        * Se deberá sumar un punto por cada pregunta respondida correctamente. 
+* Se deberá sumar un punto por cada pregunta respondida correctamente. 
 
 ##### 2.3.1-Bonus:
 
-            * Deberá ser una ronda normal, donde se ve alterada la puntuación.
-            * Las preguntas bonus deberán sumar 2 puntos.
-            * La letra de la primera pregunta bonus deberá ser aleatoria.
-            * En la siguiente ronda, que corresponde a la siguiente letra del abecedario (exceptuando la ñ), también contendrá bonus.
+* Deberá ser una ronda normal, donde se ve alterada la puntuación.
+* Las preguntas bonus deberán sumar 2 puntos.
+* La letra de la primera pregunta bonus deberá ser aleatoria.
+* En la siguiente ronda, que corresponde a la siguiente letra del abecedario (exceptuando la ñ), también contendrá bonus.
 
 #### 2.4-Preguntas:
 
 ##### 2.4.1-Características:
 
-            * Debe haber mínimo una pregunta por cada letra del abecedario (exceptuando la ñ).
+* Debe haber mínimo una pregunta por cada letra del abecedario (exceptuando la ñ).
 
 ##### 2.4.2-Tipos:
 
-            * Debe haber definiciones que se deben adivinar.
-            * Debe haber preguntas que deben ser respondidas con una única palabra.
+* Debe haber definiciones que se deben adivinar.
+* Debe haber preguntas que deben ser respondidas con una única palabra.
 
 ##### 2.4.3-Respuestas:
 
-            * Se tendrán en cuenta las tildes.
-            * La ñ no puede formar parte de la respuesta.
-            * Las palabras no pueden ser compuestas.
-            * Deberá escribirse la respuesta sin espacios.
+* Se tendrán en cuenta las tildes.
+* La ñ no puede formar parte de la respuesta.
+* Las palabras no pueden ser compuestas.
+* Deberá escribirse la respuesta sin espacios.
 
 * RESUMEN REQUISITOS FUNCIONALES:
     RFO2->NOMBRE JUGADOR

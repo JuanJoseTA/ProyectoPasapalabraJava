@@ -15,24 +15,29 @@
 # Requerimientos específicos
 ## Requisitos funcionales
 
-###  RF Respecto a los jugadores:
+
+###  1-RF Respecto a los jugadores:
+
     * Deben poder jugar dos usuarios simultáneamente.
     * Los usuarios deben poder acceder aportando su nombre de jugador.
-    * El jugador 1 sera el primer nombre introducido.
+    * El jugador 1 será el primer nombre introducido.
     * Debe empezar el jugador 1.
 
-### RF Respecto al funcionamiento del juego:
-    #### Sistema de juego:
+### 2-RF Respecto al funcionamiento del juego:
+
+    #### 2.1-Sistema de juego:
+
         * En cada letra se deberá alternar el orden de inicio entre los jugadores.
         * Deberá haber un rebote en caso del que el primer jugador en responder falle, para que el otro jugador tenga la oportunidad de ganar la letra.
         * Deberá lanzarse la misma pregunta al jugador que no ha respondido primero.
         * Deberá pasar a la siguiente letra haya acierto o fallo, llevándose la letra o no cualquiera de los jugadores.
         * Al acabar cada ronda se pasará a la siguiente letra.
-        * La respuesta debe ser introducida por teclado.
         * Cada jugador deberá tener asociado un contador con el número de aciertos (puntos) que lleva en el juego.
-        * Deberá haber una cuenta atrás de 10 segundos que comienze al mostrar la pregunta, y se resetee al cambiar el turno
+        * Deberá haber una cuenta atrás de 10 segundos que comienze al mostrar la pregunta, y se resetee al cambiar el turno.
+        * La respuesta debe ser introducida por teclado.
 
-    #### Interfaz:
+    #### 2.2-Interfaz:
+
         * Se deberá mostrar por pantalla la pregunta al jugador correspondiente. 
         * En la interfaz, en los aciertos deberá mostrarse por pantalla "CORRECTO".
         * En los errores deberá mostrarse por pantalla "INCORRECTO".
@@ -46,50 +51,38 @@
         * Se deberá mostrar por pantalla el número de aciertos de cada jugador.
         * Al mostrar la letra a responder, debe haber un mensaje indicando si la respuesta empieza o contiene la letra.
         * Al terminar la cuenta atrás, deberá darse como incorrecta la pregunta, y mostrar por pantalla "¡TIEMPO!".
+        * En las dos rondas de bonus deberá mostrarse que la puntuación es doble.
+        * La cuenta atrás de 10 segundos deberá mostrarse.
 
-    #### Puntuacion:
+    #### 2.3-Puntuacion:
 
-    #### Preguntas:
-        ##### Características:
+        * Se deberá sumar un punto por cada pregunta respondida correctamente. 
+
+        ##### 2.3.1-Bonus:
+
+            * Deberá ser una ronda normal, donde se ve alterada la puntuación.
+            * Las preguntas bonus deberán sumar 2 puntos.
+            * La letra de la primera pregunta bonus deberá ser aleatoria.
+            * En la siguiente ronda, que corresponde a la siguiente letra del abecedario (exceptuando la ñ), también contendrá bonus.
+
+    #### 2.4-Preguntas:
+
+        ##### 2.4.1-Características:
+
             * Debe haber mínimo una pregunta por cada letra del abecedario (exceptuando la ñ).
-        ##### Tipos:
+
+        ##### 2.4.2-Tipos:
+
             * Debe haber definiciones que se deben adivinar.
             * Debe haber preguntas que deben ser respondidas con una única palabra.
-        ##### Respuestas:
-        ##### Casos Especiales:
-            * El bonus deberá tener una puntuación doble.
 
-        
-        
-    
+        ##### 2.4.3-Respuestas:
 
+            * Se tendrán en cuenta las tildes.
+            * La ñ no puede formar parte de la respuesta.
+            * Las palabras no pueden ser compuestas.
+            * Deberá escribirse la respuesta sin espacios.
 
-### Despues del juego:
-* RF01  
-* RF02 
-* RF03 
-* RF04 
-* RF05 Debe lanzarse la pregunta de la primera letra al jugador 1.
-* RF06 
-* RF07 
-* RF08 
-* RF09 
-* RF10 
-* RF11 
-* RF12 
-* RF13 
-* RF14
-* RF15 
-* RF16 
-* RF17 
-* RF18 
-* RF19 
-* RF20 
-* RF21 
-* RF22 
-* RF23 
-* RF24 
-* RF25 
 * RESUMEN REQUISITOS FUNCIONALES:
     RFO2->NOMBRE JUGADOR
     RF03->JUGADOR 1 EMPIEZA
@@ -136,6 +129,7 @@
 * RNF07 Las respuestas deben contener o comenzar por la letra correspondiente al turno.
 * RNF08 El sistema recibe la respuesta en la entrada por teclado.
 * RNF09 El tiempo restante para responder se mostrará en el formato de segundos.
+
 * RESUMEN REQUISITOS NO FUNCIONALES:
     RNF01->SOPORTE
     RNF02->ALMACENAMIENTO PALABRAS

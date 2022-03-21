@@ -83,7 +83,7 @@
 * Las palabras no pueden ser compuestas.
 * Deberá escribirse la respuesta sin espacios.
 
-* RESUMEN REQUISITOS FUNCIONALES:
+## RESUMEN REQUISITOS FUNCIONALES:
     RFO2->NOMBRE JUGADOR
     RF03->JUGADOR 1 EMPIEZA
     RF04->ORDEN ALTERNADO

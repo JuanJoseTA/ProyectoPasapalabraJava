@@ -39,18 +39,17 @@
 ####    2.2-Interfaz:
 
 #####       2.2.1 Se deberá mostrar por pantalla la pregunta al jugador correspondiente. 
-#####       2.2.2 En la interfaz, en los aciertos deberá mostrarse por pantalla "CORRECTO".
-#####       2.2.3 En los errores deberá mostrarse por pantalla "INCORRECTO".
-#####       2.2.4 Deberá aparecer a la izquierda las preguntas del jugador1.
-#####       2.2.5 Deberá aparecer a la derecha las preguntas del jugador2.
-#####       2.2.6 Deberá aparecer la letra que se está respondiendo en la parte central de la interfaz.
-#####       2.2.7 Al mostrar la letra a responder, debe haber un mensaje indicando si la respuesta empieza o contiene la letra. 
-#####       2.2.8 La cuenta atrás de 10 segundos deberá mostrarse.
-#####       2.2.9 Al terminar la cuenta atrás, deberá darse como incorrecta la pregunta, y mostrar por pantalla "¡TIEMPO!". 
-#####       2.2.10 Se deberá mostrar por pantalla el número de aciertos de cada jugador.
-#####       2.2.11 En una letra aleatoria deberá mostrarse por pantalla el mensaje : "Las dos próximas letras tendrán bonus". 
-#####       2.2.12 En las dos rondas de bonus deberá mostrarse que la puntuación es doble.
-#####       2.2.13 Deberá mostrarse el resultado del juego mostrando por pantalla el ganador en caso de que lo haya.
+#####       2.2.2 Deberá aparecer la letra que se está respondiendo en la parte central de la interfaz.
+#####       2.2.3 Deberá aparecer a la izquierda las preguntas del jugador1.
+#####       2.2.4 Deberá aparecer a la derecha las preguntas del jugador2.
+#####       2.2.5 La cuenta atrás de 10 segundos deberá mostrarse.
+#####       2.2.6 En la interfaz, en los aciertos deberá mostrarse por pantalla "CORRECTO".
+#####       2.2.7 En los errores deberá mostrarse por pantalla "INCORRECTO".
+#####       2.2.8 Al terminar la cuenta atrás, deberá darse como incorrecta la pregunta, y mostrar por pantalla "¡TIEMPO!". 
+#####       2.2.9 Se deberá mostrar por pantalla el número de aciertos de cada jugador.
+#####       2.2.10 En una letra aleatoria deberá mostrarse por pantalla el mensaje : "Las dos próximas letras tendrán bonus". 
+#####       2.2.11 En las dos rondas de bonus deberá mostrarse que la puntuación es doble.
+#####       2.2.12 Deberá mostrarse el resultado del juego mostrando por pantalla el ganador en caso de que lo haya.
 
 ####    2.3-Puntuacion:
 
@@ -68,6 +67,7 @@
 #####       2.4.1-Características:
 
 ######          2.4.1.1 Debe haber mínimo una pregunta por cada letra del abecedario (exceptuando la ñ).
+######          2.4.1.2 La pregunta o definición contiene si la respuesta comienza o contiene la letra correspondiente.
 
 #####       2.4.2-Tipos:
 

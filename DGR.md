@@ -35,6 +35,8 @@
 #####       2.1.6 Cada jugador deberá tener asociado un contador con el número de aciertos (puntos) que lleva en el juego.
 #####       2.1.7 Deberá haber una cuenta atrás de 10 segundos que comienze al mostrar la pregunta, y se resetee al cambiar el turno.
 #####       2.1.8 La respuesta debe ser introducida por teclado.
+#####       2.1.9 Ganará el jugador con más aciertos.
+
 
 ####    2.2-Interfaz:
 
@@ -44,6 +46,7 @@
 #####       2.2.4 Deberá aparecer a la derecha las preguntas del jugador2.
 #####       2.2.5 La cuenta atrás de 10 segundos deberá mostrarse.
 #####       2.2.6 En la interfaz, en los aciertos deberá mostrarse por pantalla "CORRECTO".
+#####       2.2.7 Al acertar aumentará el contador, reflejándose en la interfaz.
 #####       2.2.7 En los errores deberá mostrarse por pantalla "INCORRECTO".
 #####       2.2.8 Al terminar la cuenta atrás, deberá darse como incorrecta la pregunta, y mostrar por pantalla "¡TIEMPO!". 
 #####       2.2.9 Se deberá mostrar por pantalla el número de aciertos de cada jugador.
@@ -81,34 +84,8 @@
 ######          2.4.3.3 Las palabras no pueden ser compuestas.
 ######          2.4.3.4 Deberá escribirse la respuesta sin espacios.
 
-## RESUMEN REQUISITOS FUNCIONALES:
-    RFO2->NOMBRE JUGADOR
-    RF03->JUGADOR 1 EMPIEZA
-    RF04->ORDEN ALTERNADO
-    RF05->PRIMERA PREGUNTA
-    RF06->REBOTE
-    RF07->PASO LETRA
-    RF08->FIN DE RONDA
-    RF09->MOSTRAR PREGUNTA
-    RF10->RESPUESTA TECLADO
-    RF11->ACIERTOS
-    RF12->ERRORES
-    RF13->POSICIÓN JUGADOR 1
-    RF14->POSICIÓN JUGADOR 2
-    RF15->LETRA PREGUNTA
-    RF16->MOSTRAR RESULTADO
-    RF17->MÍNIMO PREGUNTAS LETRA
-    RF18->BONUS
-    RF19->PUNTUACIÓN BONUS
-    RF20->CONTADOR ACIERTOS
-    RF21->ACIERTOS TOTALES
-    RF22->EMPIEZA O CONTIENE
-    RF23->TURNO
-    RF24->CUENTA ATRÁS
-    RF25->EXCESO TIEMPO
 
 ### Extra:
-* RF Deberá haber una letra aleatoria con bonus (da más puntos).
 * RF Las letras acertadas aparecen en la parte de la interfaz correspondiente a ese jugador.
 * RF En los aciertos se deberá mostrar por pantalla el color verde.
 * RF A su vez, en los errores deberá mostrarse por pantalla el color rojo.
@@ -119,7 +96,7 @@
 
 ## Requisitos no funcionales
 * RNF01 El sistema estará soportado por PC.
-* RNF02 La batería de palabras estará almacenada en una base de datos.
+* RNF02 La batería de palabras estará almacenada en ficheros.
 * RNF03 Los jugadores tendrán un maximo de 10 segundos para responder cada pregunta.
 * RNF04 El sistema no distingue entre mayúsculas y minúsculas.
 * RNF05 El sistema no reconocerá las tildes, por lo que el uso de tildes será respuesta incorrecta.
@@ -128,14 +105,5 @@
 * RNF08 El sistema recibe la respuesta en la entrada por teclado.
 * RNF09 El tiempo restante para responder se mostrará en el formato de segundos.
 
-* RESUMEN REQUISITOS NO FUNCIONALES:
-    RNF01->SOPORTE
-    RNF02->ALMACENAMIENTO PALABRAS
-    RNF03->TIEMPO RESPUESTA
-    RNF04->FORMATO LETRAS
-    RNF05->TILDES
-    RNF06->TEMÁTICA
-    RNF07->RESPUESTA LETRA
-    RNF08->ENTRADA TECLADO
 
 # Apéndices adicionales

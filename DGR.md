@@ -18,10 +18,10 @@
 
 ###  1-RF Respecto a los jugadores:
 
-###  1.1 Deben poder jugar dos usuarios simultáneamente.
-###  1.2 Los usuarios deben poder acceder aportando su nombre de jugador.
-###  1.3 El jugador 1 será el primer nombre introducido.
-###  1.4 Debe empezar el jugador 1.
+####  1.1 Deben poder jugar dos usuarios simultáneamente.
+####  1.2 Los usuarios deben poder acceder aportando su nombre de jugador.
+####  1.3 El jugador 1 será el primer nombre introducido.
+####  1.4 Debe empezar el jugador 1.
 
 ### 2-RF Respecto al funcionamiento del juego:
 

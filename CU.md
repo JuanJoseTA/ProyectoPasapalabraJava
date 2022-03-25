@@ -17,4 +17,10 @@
 5. El libro se crea en el sistema y se muestra un mensaje de éxito al administrador.
 * ESCENARIOS ALTERNATIVOS: El libro no se ha creado correctamente y se muestra un mensaje al administrador.
 
+* ACCIONES POSIBLES(JUGADOR1 y JUGADOR2):
+* CU1 Introducir nombre de jugador.
+* CU2 Leer pregunta por pantalla
+* CU3 Responder pregunta por teclado
+* CU4 Consultar resolución de la pregunta (Correcto o Incorrecto)
+* CU5 Ver solución (En caso de que no se acierte)
  

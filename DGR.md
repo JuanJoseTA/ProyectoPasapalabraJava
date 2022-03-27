@@ -27,15 +27,17 @@
 
 ####    2.1-Sistema de juego:
 
-#####       2.1.1 En cada letra se deberá alternar el orden de inicio entre los jugadores.
-#####       2.1.2 Deberá haber un rebote en caso del que el primer jugador en responder falle, para que el otro jugador tenga la oportunidad de ganar la letra.
-#####       2.1.3 Deberá lanzarse la misma pregunta al jugador que no ha respondido primero.
-#####       2.1.4 Deberá pasar a la siguiente letra haya acierto o fallo, llevándose la letra o no cualquiera de los jugadores.
-#####       2.1.5 Al acabar cada ronda se pasará a la siguiente letra.
-#####       2.1.6 Cada jugador deberá tener asociado un contador con el número de aciertos (puntos) que lleva en el juego.
-#####       2.1.7 Deberá haber una cuenta atrás de 10 segundos que comienze al mostrar la pregunta, y se resetee al cambiar el turno.
-#####       2.1.8 La respuesta debe ser introducida por teclado.
-#####       2.1.9 Ganará el jugador con más aciertos.
+#####       2.1.1 La respuesta debe ser introducida por teclado.
+#####       2.1.2 En cada letra se deberá alternar el orden de inicio entre los jugadores.
+#####       2.1.3 Deberá haber un rebote en caso del que el primer jugador en responder falle, para que el otro jugador tenga la oportunidad de ganar la letra.
+#####       2.1.4 Deberá lanzarse la misma pregunta al jugador que no ha respondido primero.
+#####       2.1.5 Deberá pasar a la siguiente letra haya acierto o fallo, llevándose la letra o no cualquiera de los jugadores.
+#####       2.1.6 Al acabar cada ronda se pasará a la siguiente letra.
+#####       2.1.7 Cada jugador deberá tener asociado un contador con el número de aciertos (puntos) que lleva en el juego.
+#####       2.1.8 Deberá haber una cuenta atrás de 15 segundos que comienze al mostrar la pregunta, y se resetee al cambiar el turno.
+#####       2.1.9 La última letra deberá ser la z
+#####       2.1.10 Ganará el jugador con más aciertos.
+ 
 
 
 ####    2.2-Interfaz:
@@ -44,7 +46,7 @@
 #####       2.2.2 Deberá aparecer la letra que se está respondiendo en la parte central de la interfaz.
 #####       2.2.3 Deberá aparecer a la izquierda las preguntas del jugador1.
 #####       2.2.4 Deberá aparecer a la derecha las preguntas del jugador2.
-#####       2.2.5 La cuenta atrás de 10 segundos deberá mostrarse.
+#####       2.2.5 La cuenta atrás de 15 segundos deberá mostrarse.
 #####       2.2.6 En la interfaz, en los aciertos deberá mostrarse por pantalla "CORRECTO".
 #####       2.2.7 Al acertar aumentará el contador, reflejándose en la interfaz.
 #####       2.2.7 En los errores deberá mostrarse por pantalla "INCORRECTO".
@@ -84,6 +86,7 @@
 ######          2.4.3.2 La ñ no puede formar parte de la respuesta.
 ######          2.4.3.3 Las palabras no pueden ser compuestas.
 ######          2.4.3.4 Deberá escribirse la respuesta sin espacios.
+######          2.4.3.5 Deberá ser una única palabra.
 
 
 ### Extra:
@@ -92,19 +95,20 @@
 * RF A su vez, en los errores deberá mostrarse por pantalla el color rojo.
 * RF Deberá ganar siempre un jugador.
 * RF Deberá haber preguntas extras con letras aleatorias.
-* RF Deberá mostrar al final de la partida, el tiempo utilizado por cada uno de los jugadores.
+
 
 
 ## Requisitos no funcionales
 * RNF01 El sistema estará soportado por PC.
 * RNF02 La batería de palabras estará almacenada en ficheros.
-* RNF03 Los jugadores tendrán un maximo de 10 segundos para responder cada pregunta.
+* RNF03 Los jugadores tendrán un maximo de 15 segundos para responder cada pregunta.
 * RNF04 El sistema no distingue entre mayúsculas y minúsculas.
 * RNF05 El sistema no reconocerá las tildes, por lo que el uso de tildes será respuesta incorrecta.
 * RNF06 La temática del juego será orientada al conocimiento deportivo.
 * RNF07 Las respuestas deben contener o comenzar por la letra correspondiente al turno.
 * RNF08 El sistema recibe la respuesta en la entrada por teclado.
 * RNF09 El tiempo restante para responder se mostrará en el formato de segundos.
+* RNF10 La letra aleotoria bonus no podrá ser la z.
 
 
 # Apéndices adicionales

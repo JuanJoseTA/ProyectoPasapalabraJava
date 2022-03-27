@@ -84,26 +84,30 @@
 							
 	• Identificador único: * CU6 Ver puntuación(1)
 	• Autor: Pablo Frías, Mario Bernáldez y Roberto Gil
-	• Contexto de uso
-	• Actor principal
-	• Participantes y objetivos
-	• Garantías mínimas
-	• Garantías de éxito y/o Post-condiciones
-	• Precondiciones y activación
-	• Escenario principal
-	• Escenarios alternativos
+	• Contexto de uso: El  jugador podrá saber en todo momento su puntuación actual.
+	• Actor principal: El sistema.
+	• Participantes y objetivos: EL sistema y el jugador; el objetivo es mostrar la puntuación del jugador. 
+	• Garantías de éxito y/o Post-condiciones: Se muestrar en pantalla la puntuación del jugador actualizada.
+	• Precondiciones y activación: Cada vez que un jugador responda una pregunta.
+	• Escenario principal: 1. El jugador se encuentra en la partida.
+			       2. El sistema lleva un recuento del numero de puntos obtenidos, siendo 1 en caso de acierto, y 2 en caso de acierto estando en la letra oculta. 
+			       3. El sistema imprime por pantalla la puntuación del jugador.	
+	• Escenarios alternativos: Si no tiene puntuación, se mostrará por pantalla "0".
 		
 	• Identificador único:  * CU7 Ver puntuación(2)
 	• Autor: Pablo Frías, Mario Bernáldez y Roberto Gil
-	• Contexto de uso
-	• Actor principal
-	• Participantes y objetivos
-	• Garantías mínimas
-	• Garantías de éxito y/o Post-condiciones
-	• Precondiciones y activación
-	• Escenario principal
+	• Contexto de uso: Al terminar la partida se mostrará el ganador.
+	• Actor principal: El sistema.
+	• Participantes y objetivos: El sistema y el jugador; el objetivo es informar a los jugadores, de quién ha sido el ganador.
+	• Garantías de éxito y/o Post-condiciones: Se mostrará por pantalla, el nombre del jugador que haya ganado junto con su puntuación
+	• Precondiciones y activación: Se deben haber completado todas las letras.
+	• Escenario principal: 1. El sistema busca cuál ha sido la puntuación mas alta.
+			       2. El sistema mira el nombre asociado a la mayor puntuación.
+			       3. El sistema imprime por pantalla el nombre del jugador junto con el mensaje "ha ganado".
 	• Escenarios alternativos
-
+			       1. El sistema busca cuál ha sido la puntuación más alta, siendo iguales ambas.
+			       2. El sistema muestra por pantalla "Empate".
+			       3. (Se pasa a muerte súbita).
 
 
 

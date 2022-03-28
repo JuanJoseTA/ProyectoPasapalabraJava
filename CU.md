@@ -90,7 +90,7 @@
 	• Garantías de éxito y/o Post-condiciones: Se muestrar en pantalla la puntuación del jugador actualizada.
 	• Precondiciones y activación: Cada vez que un jugador responda una pregunta.
 	• Escenario principal: 1. El jugador se encuentra en la partida.
-			       2. El sistema lleva un recuento del numero de puntos obtenidos, siendo 1 en caso de acierto, y 2 en caso de acierto estando en la letra oculta. 
+			       2. El sistema lleva un recuento del numero de puntos obtenidos, siendo 1 en caso de acierto, y 2 en caso de acierto estando en la letra bonus. 
 			       3. El sistema imprime por pantalla la puntuación del jugador.	
 	• Escenarios alternativos: Si no tiene puntuación, se mostrará por pantalla "0".
 		

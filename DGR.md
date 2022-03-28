@@ -18,19 +18,30 @@
 
 ### RF01 Acceso a la partida.
 
-#### RF01.1 Nombre de jugador. Deberan introducir el nombre por teclado cada uno de forma ordenada.
-#### RF01.2 Jugador 1. Debera ser el primer nombre introducido.
-#### RF01.3 Jugador 2. Debera ser el segundo nombre introducido.
+#### RF01.1 Nombre de jugador. Deberán introducir el nombre por teclado cada uno de forma ordenada.
+#### RF01.2 Jugador 1. Deberá ser el primer nombre introducido.
+#### RF01.3 Jugador 2. Deberá ser el segundo nombre introducido.
 
 
 ### RF02 Jugar una partida.
 
 #### RF02.1 Ronda
-##### RF02.1.1 Pregunta de la letra. Se realiza la pregunta aleatoria de la letra correspondiente. Referencia al RF06
-##### RF02.1.2 Cronómetro. Cuando se lanza la pregunta se inicia un contador de 15 segundos. Se reinicia cada vez que haya una respuesta. Depende de RF02.1.1
-##### RF02.1.3 Respuesta del usuario. 
+##### RF02.1.1 Nº de rondas. Habrá tantas rondas como letras del abecedario, excepto la ñ.
+##### RF02.1.2 Pregunta de la letra. Se realiza la pregunta aleatoria de la letra correspondiente. Referencia al RF06
+##### RF02.1.3 Cronómetro. Cuando se lanza la pregunta se inicia un contador de 15 segundos. Depende de RF02.1.1
+######  RF02.1.3.1 Reinicio. En caso de rebote se reinicia el contador, ya que no cambia la ronda.
+##### RF02.1.4 Respuesta del usuario. 
+######  RF02.1.4.1 Entrada. La palabra sera introducida por teclado en el formato indicado. Depende de RF06.
+######  RF02.1.4.2 Respuesta Correcta. En caso de acierto, puntúa al jugador correspondiente y pasa a la siguiente ronda.
+######  RF02.1.4.3 Respuesta Incorrecta. 
+####### RF02.1.4.3.1 Jugador que inicia la ronda. Si éste falla, se produciría el rebote al otro jugador.
+####### RF02.1.4.3.2 Jugador que recibe el rebote. Si éste falla, se pasa a la siguiente ronda (letra) sin que ninguno puntúe.
 
 #### RF02.2 Turnos
+##### RF02.2.1 Definición.  El turno de cada ronda se corresponde al jugador que empieza respondiendo. 
+##### RF02.2.2 Primer turno. Le corresponde al jugador 1. 
+##### RF02.2.3 Orden alternado. En cada ronda se deberá alternar el orden de inicio entre los jugadores.
+
 #### RF02.3 Final
 
 ### RF03 Sistema de puntuacion
@@ -53,7 +64,7 @@
 ####    2.1-Sistema de juego:
 
 #####       2.1.1 La respuesta debe ser introducida por teclado.
-#####       2.1.2 En cada letra se deberá alternar el orden de inicio entre los jugadores.
+#####       2.1.2 
 #####       2.1.3 Deberá haber un rebote en caso del que el primer jugador en responder falle, para que el otro jugador tenga la oportunidad de ganar la letra.
 #####       2.1.4 Deberá lanzarse la misma pregunta al jugador que no ha respondido primero.
 #####       2.1.5 Deberá pasar a la siguiente letra haya acierto o fallo, llevándose la letra o no cualquiera de los jugadores.

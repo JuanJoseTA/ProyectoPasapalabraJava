@@ -16,6 +16,31 @@
 ## Requisitos funcionales
 
 
+### RF01 Acceso a la partida.
+
+#### RF01.1 Nombre de jugador. Deberan introducir el nombre por teclado cada uno de forma ordenada.
+#### RF01.2 Jugador 1. Debera ser el primer nombre introducido.
+#### RF01.3 Jugador 2. Debera ser el segundo nombre introducido.
+
+
+### RF02 Jugar una partida.
+
+#### RF02.1 Ronda
+##### RF02.1.1 Pregunta de la letra. Se realiza la pregunta aleatoria de la letra correspondiente. Referencia al RF06
+##### RF02.1.2 Cronómetro. Cuando se lanza la pregunta se inicia un contador de 15 segundos. Se reinicia cada vez que haya una respuesta. Depende de RF02.1.1
+##### RF02.1.3 Respuesta del usuario. 
+
+#### RF02.2 Turnos
+#### RF02.3 Final
+
+### RF03 Sistema de puntuacion
+
+### RF04 Interfaz
+
+### RF05 Preguntas
+
+### RF06 Respuestas
+
 ###  1-RF Respecto a los jugadores:
 
 ####    1.1 Deben poder jugar dos usuarios simultáneamente.

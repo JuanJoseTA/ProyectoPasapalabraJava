@@ -118,6 +118,7 @@
 	RF06.1.2 Letra "ñ".La ñ no puede formar parte de la respuesta.
 	RF06.1.3 Palabras compuestas. Las palabras no pueden ser compuestas.
 	RF06.1.4 Espacios en blanco.Deberá escribirse la respuesta sin espacios.
+	RF06.1.5 Caracteres especiales. La respuesta no debe incluir carácteres especiales.
       
 #### RF06.2 Corrección. La respuesta será correcta si se corresponde con la pregunta dada y no contiene ninguna restricción. Referencia a RF05.
 
@@ -170,10 +171,11 @@
 #####       2.2.7 En los errores deberá mostrarse por pantalla "INCORRECTO".
 #####       2.2.8 Al fallar el jugador el rebote, deberá mostrarse por pantalla la solucion.
 #####       2.2.9 Al terminar la cuenta atrás, deberá darse como incorrecta la pregunta, y mostrar por pantalla "¡TIEMPO!". 
-#####       2.2.10 Se deberá mostrar por pantalla el número de aciertos de cada jugador.
-#####       2.2.11 En una letra aleatoria deberá mostrarse por pantalla el mensaje : "Las dos próximas letras tendrán bonus". 
-#####       2.2.12 En las dos rondas de bonus deberá mostrarse que la puntuación es doble.
-#####       2.2.13 Deberá mostrarse el resultado del juego mostrando por pantalla el ganador en caso de que lo haya.
+#####       2.2.10 Deberá aparecer a la izquierda el número de aciertos del jugador1.
+#####	    2.2.11 Deberá aparecer a la derecha el número de aciertos del jugador2.
+#####       2.2.12 En una letra aleatoria deberá mostrarse por pantalla el mensaje : "Las dos próximas letras tendrán bonus". 
+#####       2.2.13 En las dos rondas de bonus deberá mostrarse que la puntuación es doble.
+#####       2.2.14 Deberá mostrarse el resultado del juego mostrando por pantalla el ganador en caso de que lo haya.
 
 ####    2.3-Puntuacion:
 
@@ -205,11 +207,13 @@
 ######          2.4.3.3 Las palabras no pueden ser compuestas.
 ######          2.4.3.4 Deberá escribirse la respuesta sin espacios.
 ######          2.4.3.5 Deberá ser una única palabra.
+######          2.4.3.6 La respuesta no puede contener caracteres especiales. 
 
 
 ### Extra:
 * RF Las letras acertadas aparecen en la parte de la interfaz correspondiente a ese jugador.
 * RF En los aciertos se deberá mostrar por pantalla el color verde.
+* RF Al acertar en la latra bonus, se deberá mostrar por pantalla el color dorado.
 * RF A su vez, en los errores deberá mostrarse por pantalla el color rojo.
 * RF Deberá ganar siempre un jugador.
 * RF Deberá haber preguntas extras con letras aleatorias.
@@ -222,6 +226,7 @@
 * RNF03 Los jugadores tendrán un maximo de 15 segundos para responder cada pregunta.
 * RNF04 El sistema no distingue entre mayúsculas y minúsculas.
 * RNF05 El sistema no reconocerá las tildes, por lo que el uso de tildes será respuesta incorrecta.
+* RNF05 El sistema no reconocerá los caracteres especiales, por lo que el uso de caracteres especiales será respuesta incorrecta.
 * RNF06 La temática del juego será orientada al conocimiento deportivo.
 * RNF07 Las respuestas deben contener o comenzar por la letra correspondiente al turno.
 * RNF08 El sistema recibe la respuesta en la entrada por teclado.

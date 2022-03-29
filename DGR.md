@@ -81,14 +81,14 @@
 
 ### RF03 Sistema de puntuacion
 
-	RF03.1 Contador. Cada jugador deberá tener asociado un contador con el número de aciertos (puntos) que lleva en el juego.
+#### RF03.1 Contador. Cada jugador deberá tener asociado un contador con el número de aciertos (puntos) que lleva en el juego.
 	
 		RF03.1.1 Acierto. Se deberá sumar un punto al contador del jugador que responda una pregunta correctamente. Depende de RF06.
 		
 		RF03.1.2 Fallo. No se debe sumar ningún punto al contador del jugador que responda una pregunta incorrectamente. Depende de RF06.
 		
 	
-	RF03.2 Bonus. 
+#### RF03.2 Bonus. 
 	
 		RF03.2.1 Definición. Una ronda normal, donde se ve alterada la puntuación. Depende de RF02.
 		
@@ -99,27 +99,27 @@
 ### RF04 Interfaz
 
 ### RF05 Preguntas
-	RF05.1 Tipo. Habrá distintas maneras  de formular las preguntas.
+#### RF05.1 Tipo. Habrá distintas maneras  de formular las preguntas.
 		RF05.1.2 Definición. Proposición que expone con claridad el significado de la palabra a responder.
 		
 		RF05.1.3 Interrogación. Enunciado con signo de interrogación cuyo propósito es una respuesta.
 		
 		RF05.1.4 Completar. Enunciado incompleto que debe ser rellenado con una palabra para darle un significado.
 		
-	RF05.2 Características. 
+#### RF05.2 Características. 
 	
-		RF05.2.1 Indicador. Al principio de la pregunta o definición, se indicará si la respuesta empieza o contiene por la letra correspondiente a la ronda. Depende de RF02.
+	RF05.2.1 Indicador. Al principio de la pregunta o definición, se indicará si la respuesta empieza o contiene por la letra correspondiente a la ronda. Depende de RF02.
 	 
 
 ### RF06 Respuestas
 
-	RF06.1 Restricciones. Características que debe cumplir la respuesta para que sea considerada como válida.
-		RF06.1.1 Tildes. No se tendrán en cuenta las tildes.
-		RF06.1.2 Letra "ñ".La ñ no puede formar parte de la respuesta.
-		RF06.1.3 Palabras compuestas. Las palabras no pueden ser compuestas.
-		RF06.1.4 Espacios en blanco.Deberá escribirse la respuesta sin espacios.
+#### RF06.1 Restricciones. Características que debe cumplir la respuesta para que sea considerada como válida.
+	RF06.1.1 Tildes. No se tendrán en cuenta las tildes.
+	RF06.1.2 Letra "ñ".La ñ no puede formar parte de la respuesta.
+	RF06.1.3 Palabras compuestas. Las palabras no pueden ser compuestas.
+	RF06.1.4 Espacios en blanco.Deberá escribirse la respuesta sin espacios.
       
-	RF06.2 Corrección. La respuesta será correcta si se corresponde con la pregunta dada y no contiene ninguna restricción. Referencia a RF05.
+#### RF06.2 Corrección. La respuesta será correcta si se corresponde con la pregunta dada y no contiene ninguna restricción. Referencia a RF05.
 
 
 

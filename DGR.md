@@ -107,15 +107,16 @@
 		
 		RF04.2 Mostrar Correccion. Al responder el jugador se deberá mostrar si es correcto o no y sus consecuencias. Depende de RF06.
 		    RF04.2.1 Mostrar Correcto. Si la respuesta es correcta se deberá mostrar "CORRECTO".
-			    RF04.2.1.1 Mostrar puntuacion. Se deberá mostrar la puntuación actualizada. Depende de RF03 y RF02.1.5.
 			RF04.2.2 Mostrar Incorrecto. Si la respuesta es incorrecta se deberá mostrar "INCORRECTO".
 			    RF04.2.2.1 Mostrar rebote. Si el que falla es el primer jugador en responder en esta ronda, se deberá mostrar "REBOTE". Depende de RF02.2
 				RF04.2.1.2 Mostrar solucion. Si falla el rebote se deberá mostrar la solución. 
 
 		RF04.3 Mostrar contador. Se deberá mostrar en todo momento el numero de aciertos de cada jugador. Depende de RF03.
 		    RF04.3.1 Jugador 1. Se deberá mostrar su contador de aciertos en la parte izquierda de la pantalla.
+				RF04.3.1.1 Pregunta. Si el jugador1 acierta una pregunta, se le actualiza su contador. Depende RF03 y RF02.1.5.
 			RF04.3.2 Jugador 2. Se deberá mostrar su contador de aciertos en la parte derecha de la pantalla.
-
+				RF04.3.2.1 Pregunta. Si el jugador2 acierta una pregunta, se le actualiza su contador. Depende RF03 y RF02.1.5.
+				
 		RF04.4 Mostrar final. Al acabar la partida se deberá mostrar el resultado. Depende de RF02.3.
 		    RF04.4.1 Ganador 1. Se deberá mostrar "GANADOR" y el nombre del jugador 1 si tiene mas aciertos que jugador 2. Depende de RF01.
 			RF04.4.2 Ganador 2. Se deberá mostrar "GANADOR" y el nombre del jugador 2 si tiene mas aciertos que jugador 1. Depende de RF01.

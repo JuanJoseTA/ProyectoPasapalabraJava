@@ -97,6 +97,34 @@
 			RF03.2.1.2 Fallo. No se debe sumar ningún punto al contador del jugador que responda una pregunta incorrectamente. Depende de RF06.
 
 ### RF04 Interfaz
+        RF04.1 Mostrar Pregunta. Se deberá mostrar una pregunta aleatoria, de la letra correspondiente, en pantalla. Referencia a RF05. Depende de RF02.1
+		    RF04.1.1 Mostrar jugador. Se deberá mostrar la pregunta en la parte de la pantalla del jugador que tenga el turno. Depende de RF02.2
+			RF04.1.2 Mostrar letra. Se deberá mostrar la letra en la parte central a la que corresponde la ronda. 
+			RF04.1.3 Mostrar tiempo. Se deberá mostrar la cuenta atrás.
+			    RF04.1.3.1 Acaba . Si el tiempo acaba se deberá mostrar "TIEMPO".
+			RF04.1.4 Mostrar bonus. Si la letra es bonus, deberá mostrar "Las dos próximas letras tendrán bonus". Depende de RF02.1.5.
+			    RF04.1.4.1 Mostrar Puntuacion. Mostrar "Puntuacion doble".
+		
+		RF04.2 Mostrar Correccion. Al responder el jugador se deberá mostrar si es correcto o no y sus consecuencias. Depende de RF06.
+		    RF04.2.1 Mostrar Correcto. Si la respuesta es correcta se deberá mostrar "CORRECTO".
+			    RF04.2.1.1 Mostrar puntuacion. Se deberá mostrar la puntuación actualizada. Depende de RF03 y RF02.1.5.
+			RF04.2.2 Mostrar Incorrecto. Si la respuesta es incorrecta se deberá mostrar "INCORRECTO".
+			    RF04.2.2.1 Mostrar rebote. Si el que falla es el primer jugador en responder en esta ronda, se deberá mostrar "REBOTE". Depende de RF02.2
+				RF04.2.1.2 Mostrar solucion. Si falla el rebote se deberá mostrar la solución. 
+
+		RF04.3 Mostrar contador. Se deberá mostrar en todo momento el numero de aciertos de cada jugador. Depende de RF03.
+		    RF04.3.1 Jugador 1. Se deberá mostrar su contador de aciertos en la parte izquierda de la pantalla.
+			RF04.3.2 Jugador 2. Se deberá mostrar su contador de aciertos en la parte derecha de la pantalla.
+
+		RF04.4 Mostrar final. Al acabar la partida se deberá mostrar el resultado. Depende de RF02.3.
+		    RF04.4.1 Ganador 1. Se deberá mostrar "GANADOR" y el nombre del jugador 1 si tiene mas aciertos que jugador 2. Depende de RF01.
+			RF04.4.2 Ganador 2. Se deberá mostrar "GANADOR" y el nombre del jugador 2 si tiene mas aciertos que jugador 1. Depende de RF01.
+			RF04.4.3 Empate. Se deberá mostrar "EMPATE" si el numero de aciertos de los dos jugadores es el mismo. 
+			RF04.4.4 Jugar otra vez. Se deberá mostrar "Jugar otra vez". 
+			
+
+
+
 
 ### RF05 Preguntas
 #### RF05.1 Tipo. Habrá distintas maneras  de formular las preguntas.

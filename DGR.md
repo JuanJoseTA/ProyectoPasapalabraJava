@@ -20,9 +20,9 @@
 
 #### RF01.1 Nombre de jugador. Deberán introducir el nombre por teclado cada uno de forma ordenada.
 
-#### RF01.2 Jugador 1. Deberá ser el primer nombre introducido.
+	RF01.1.1 Jugador 1. Deberá ser el primer nombre introducido.
 
-#### RF01.3 Jugador 2. Deberá ser el segundo nombre introducido.
+	RF01.1.2 Jugador 2. Deberá ser el segundo nombre introducido.
 
 
 ### RF02 Jugar una partida.
@@ -33,7 +33,7 @@
 
 	RF02.1.2 Pregunta de la letra. Se realiza la pregunta aleatoria de la letra correspondiente. Referencia al RF05
 	
-	RF02.1.3 Cronómetro. Cuando se lanza la pregunta se inicia un contador de 15 segundos. Depende de RF02.1.1
+	RF02.1.3 Cronómetro. Cuando se lanza la pregunta se inicia un contador de 15 segundos. Depende de RF02.1.2
 	
 		RF02.1.3.1 Reinicio. En caso de rebote se reinicia el contador, ya que no cambia la ronda.
 		
@@ -43,37 +43,31 @@
 		
 		RF02.1.4.2 Respuesta Correcta. En caso de acierto, puntúa al jugador correspondiente y pasa a la siguiente ronda.
 		
-		RF02.1.4.3 Respuesta Incorrecta. 
+		RF02.1.4.3 Respuesta Incorrecta. Puede ser por fin del tiempo o por respuesta errónea.
 		
 			RF02.1.4.3.1 Jugador que inicia la ronda. Si éste falla, se produciría el rebote al otro jugador.
+
+				RF02.1.4.3.1.1 Rebote. Se le hace la misma pregunta al otro jugador dandole la oportunidad a ganar la letra.
 	
 			RF02.1.4.3.2 Jugador que recibe el rebote. Si éste falla, se pasa a la siguiente ronda(letra) sin que ninguno puntúe.
-			
-				RF02.1.4.3.2.1 Solución a la respuesta correcta a la pregunta dada. Referencia a la RF04.
 			 
-	RF02.1.5 Bonus.
-
-		RF02.1.5.1 Ronda de bonus. Dos rondas normales consecutivas aleatorias. Referencia RF03.2.
+	RF02.1.5 Bonus. Dos rondas normales consecutivas aleatorias. Referencia RF03.2.
 		 
-		RF02.1.5.2 Restriccion. La primera de estas dos rondas, no podrá ser la ronda final. Depende RF02.3
+		RF02.1.5.1 Restriccion. La primera de estas dos rondas, no podrá ser la ronda final. Depende RF02.3
 
-#### RF02.2 Turnos
+#### RF02.2 Turnos. El turno de cada ronda lo marca la letra a responder.
+	
+	RF02.2.1 Primer turno. Le corresponde al jugador 1. 
+	
+	RF02.2.2 Orden alternado. En cada ronda se deberá alternar el orden de inicio entre los jugadores.
 
-	RF02.2.1 Definición.  El turno de cada ronda lo marca la letra a responder.
-	
-	RF02.2.2 Primer turno. Le corresponde al jugador 1. 
-	
-	RF02.2.3 Orden alternado. En cada ronda se deberá alternar el orden de inicio entre los jugadores.
+#### RF02.3 Final. Al terminar la última ronda (correspondiente a la letra "z").Depende de RF02.1.
 
-#### RF02.3 Final
-
-	RF02.3.1 Definición. Al terminar la última ronda (correspondiente a la letra "z").Depende de RF02.1.
+	RF02.3.1 Comparar marcadores. Gana el jugador que tenga mayor puntuación. Depende de RF03.
 	
-	RF02.3.2 Ganador. Gana el jugador que tenga mayor puntuación. Depende de RF03.
-	
-		RF02.3.2.1 Empate. En este caso, no hay ganador.
+		RF02.3.1.1 Empate. En este caso, no hay ganador.
 		
-		RF02.3.2.2 Mostrarlo. Mostrar el resultado de la partida. Depende de RF04.
+		RF02.3.1.2 Ganador.
 
 
 ### RF03 Sistema de puntuacion
@@ -84,13 +78,11 @@
 		
 	RF03.1.2 Fallo. No se debe sumar ningún punto al contador del jugador que responda una pregunta incorrectamente. Depende de RF06.
 		
-#### RF03.2 Bonus. 
-	
-	RF03.2.1 Definición. Una ronda normal, donde se ve alterada la puntuación. Depende de RF02.
+#### RF03.2 Bonus. Una ronda normal, donde se ve alterada la puntuación. Depende de RF02.
 		
-		RF03.2.1.1 Acierto. Se deberá sumar dos puntos al contador del jugador que responda una pregunta correctamente. Depende de RF06.
+	RF03.2.1 Acierto. Se deberá sumar dos puntos al contador del jugador que responda una pregunta correctamente. Depende de RF06.
 			
-		RF03.2.1.2 Fallo. No se debe sumar ningún punto al contador del jugador que responda una pregunta incorrectamente. Depende de RF06.
+	RF03.2.2 Fallo. No se debe sumar ningún punto al contador del jugador que responda una pregunta incorrectamente. Depende de RF06.
 
 
 ### RF04 Interfaz
@@ -117,7 +109,7 @@
 
 		RF04.2.2.1 Mostrar rebote. Si el que falla es el primer jugador en responder en esta ronda, se deberá mostrar "REBOTE". Depende de RF02.2
 
-		RF04.2.1.2 Mostrar solucion. Si falla el rebote se deberá mostrar la solución. 
+		RF04.2.2.2 Mostrar solucion. Si falla el rebote se deberá mostrar la solución. 
 
 #### RF04.3 Mostrar contador. Se deberá mostrar en todo momento el numero de aciertos de cada jugador. Depende de RF03.
 
@@ -144,15 +136,13 @@
 
 #### RF05.1 Tipo. Habrá distintas maneras  de formular las preguntas.
 
-	RF05.1.2 Definición. Proposición que expone con claridad el significado de la palabra a responder.
+	RF05.1.1 Definición. Proposición que expone con claridad el significado de la palabra a responder.
 		
-	RF05.1.3 Interrogación. Enunciado con signo de interrogación cuyo propósito es una respuesta.
+	RF05.1.2 Interrogación. Enunciado con signo de interrogación cuyo propósito es una respuesta.
 		
-	RF05.1.4 Completar. Enunciado incompleto que debe ser rellenado con una palabra para darle un significado.
+	RF05.1.3 Completar. Enunciado incompleto que debe ser rellenado con una palabra para darle un significado.
 		
-#### RF05.2 Características. 
-	
-	RF05.2.1 Indicador. Al principio de la pregunta o definición, se indicará si la respuesta empieza o contiene por la letra correspondiente a la ronda. Depende de RF02.
+#### RF05.2 Indicador. Al principio de la pregunta o definición, se indicará si la respuesta empieza o contiene por la letra correspondiente a la ronda. Depende de RF02.
 	 
 
 ### RF06 Respuestas

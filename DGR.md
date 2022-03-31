@@ -33,7 +33,7 @@
 
 	RF02.1.2 Pregunta de la letra. Se realiza la pregunta aleatoria de la letra correspondiente. Referencia al RF05
 	
-	RF02.1.3 Cronómetro. Cuando se lanza la pregunta se inicia un contador de 15 segundos. Depende de RF02.1.1
+	RF02.1.3 Cronómetro. Cuando se lanza la pregunta se inicia un contador de 15 segundos. Depende de RF02.1.2
 	
 		RF02.1.3.1 Reinicio. En caso de rebote se reinicia el contador, ya que no cambia la ronda.
 		
@@ -55,19 +55,19 @@
 		 
 		RF02.1.5.1 Restriccion. La primera de estas dos rondas, no podrá ser la ronda final. Depende RF02.3
 
-#### RF02.2 Turnos El turno de cada ronda lo marca la letra a responder.
+#### RF02.2 Turnos. El turno de cada ronda lo marca la letra a responder.
 	
 	RF02.2.1 Primer turno. Le corresponde al jugador 1. 
 	
 	RF02.2.2 Orden alternado. En cada ronda se deberá alternar el orden de inicio entre los jugadores.
 
-#### RF02.3 Final Definición. Al terminar la última ronda (correspondiente a la letra "z").Depende de RF02.1.
+#### RF02.3 Final. Al terminar la última ronda (correspondiente a la letra "z").Depende de RF02.1.
 
 	RF02.3.1 Comparar marcadores. Gana el jugador que tenga mayor puntuación. Depende de RF03.
 	
 		RF02.3.1.1 Empate. En este caso, no hay ganador.
 		
-		RF02.3.1.2 Mostrar ganador. Depende de RF04.
+		RF02.3.1.2 Ganador.
 
 
 ### RF03 Sistema de puntuacion

@@ -39,7 +39,7 @@
 		
 		RF02.1.4.2 Respuesta Correcta. En caso de acierto, puntúa al jugador correspondiente y pasa a la siguiente ronda.
 		
-		RF02.1.4.3 Respuesta Incorrecta. Puede ser por fin del tiempo o por respuesta errónea. Depende RNF04.
+		RF02.1.4.3 Respuesta Incorrecta. Puede ser por fin del tiempo o por respuesta errónea. 
 		
 			RF02.1.4.3.1 Jugador que inicia la ronda. Si éste falla, se produciría el rebote al otro jugador.
 
@@ -49,7 +49,7 @@
 			 
 	RF02.1.5 Bonus. Se trata de dos rondas, la primera será escogida aleatoriamente y la segunda será la posterior a esta. Referencia RF03.2. La primera de estas dos rondas, no podrá ser la ronda final. Depende RF02.3. Debe cumplir RNF011.
 
-#### RF02.2 Turnos. El turno de cada ronda lo marca la letra a responder. El turno será siempre el contrario al de la ronda anterior excepto    en la ronda uno que empezará el jugador 1. Depende de RF01.
+#### RF02.2 Turnos. El turno de cada ronda lo marca la letra a responder. El turno será siempre el contrario al de la ronda anterior excepto en la ronda uno que empezará el jugador 1. Depende de RF01.
 	
 
 #### RF02.3 Final. Al terminar la última ronda (correspondiente a la letra "z").Depende de RF02.1.

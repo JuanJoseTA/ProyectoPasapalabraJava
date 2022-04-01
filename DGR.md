@@ -27,7 +27,7 @@
 
 	RF02.1.1 Nº de rondas. Habrá tantas rondas como letras del abecedario, excepto la ñ.
 
-	RF02.1.2 Pregunta de la letra. Se realiza la pregunta aleatoria de la letra correspondiente. Referencia al RF05
+	RF02.1.2 Pregunta de la letra. Se realiza la pregunta aleatoria de la letra correspondiente. Referencia al RF05.
 	
 	RF02.1.3 Cronómetro. Cuando se lanza la pregunta se inicia un contador. Depende de RF02.1.2. Se debe cumplir RNF03. 
 	
@@ -35,7 +35,7 @@
 		
 	RF02.1.4 Respuesta del usuario. 
 	
-		RF02.1.4.1 Entrada. La palabra sera introducida por teclado en el formato indicado. Depende de RF06.
+		RF02.1.4.1 Entrada. La palabra sera introducida por teclado en el formato indicado.
 		
 		RF02.1.4.2 Respuesta Correcta. En caso de acierto, puntúa al jugador correspondiente y pasa a la siguiente ronda.
 		
@@ -61,15 +61,15 @@
 
 #### RF03.1 Contador. Cada jugador deberá tener asociado un contador con el número de aciertos (puntos) que lleva en el juego.
 	
-	RF03.1.1 Acierto. Se deberá sumar un punto al contador del jugador que responda una pregunta correctamente. Depende de RF06.
+	RF03.1.1 Acierto. Se deberá sumar un punto al contador del jugador que responda una pregunta correctamente. 
 		
-	RF03.1.2 Fallo. No se debe sumar ningún punto al contador del jugador que responda una pregunta incorrectamente. Depende de RF06.
+	RF03.1.2 Fallo. No se debe sumar ningún punto al contador del jugador que responda una pregunta incorrectamente.
 		
 #### RF03.2 Bonus. Una ronda normal, donde se ve alterada la puntuación. Depende de RF02.
 		
-	RF03.2.1 Acierto. Se deberá sumar dos puntos al contador del jugador que responda una pregunta correctamente. Depende de RF06.
+	RF03.2.1 Acierto. Se deberá sumar dos puntos al contador del jugador que responda una pregunta correctamente. 
 			
-	RF03.2.2 Fallo. No se debe sumar ningún punto al contador del jugador que responda una pregunta incorrectamente. Depende de RF06.
+	RF03.2.2 Fallo. No se debe sumar ningún punto al contador del jugador que responda una pregunta incorrectamente. 
 
 
 ### RF04 Interfaz
@@ -88,7 +88,7 @@
 
 		RF04.1.4.1 Mostrar Puntuacion. Mostrar "Puntuacion doble".
 		
-#### RF04.2 Mostrar Correccion. Al responder el jugador se deberá mostrar si es correcto o no y sus consecuencias. Depende de RF06.
+#### RF04.2 Mostrar Correccion. Al responder el jugador se deberá mostrar si es correcto o no y sus consecuencias. 
 
 	RF04.2.1 Mostrar Correcto. Si la respuesta es correcta se deberá mostrar "CORRECTO".
 
@@ -120,7 +120,7 @@
 
 ## Requisitos no funcionales
 ### RNF01 Soporte. El sistema estará soportado por PC. Sólo para navegador.
-### RNF02 Almacenamiento. La batería de palabras estará almacenada en ficheros.
+### RNF02 Almacenamiento. La batería de palabras estará almacenada en ficheros de texto.
 ### RNF03 Los jugadores tendrán un maximo de 15 segundos para responder cada pregunta.
 ### RNF04 El sistema no distingue entre mayúsculas y minúsculas.
 ### RNF05 El sistema no permitirá el uso de las tildes.

@@ -1,18 +1,4 @@
-# Historial de revisiones
 
-  
-# Introducción
-## Propósito
-## Alcance
-## Visión general
-
-# Descripción general del producto
-## Funciones del producto
-## Suposiciones y dependencias
-## Restricciones
-## Requisitos futuros
-
-# Requerimientos específicos
 ## Requisitos funcionales
 
 
@@ -132,4 +118,4 @@
 ### RNF11 La primera ronda aleatoria no podrá ser la correspondiente a la letra "z".
 
 
-# Apéndices adicionales
+

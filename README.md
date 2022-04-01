@@ -21,5 +21,4 @@ preguntas de distintas disciplinas por cada letra, aunque se buscará mayor núm
 preguntas en deportes más populares, ya que habrá más conocimiento de los mismos por
 parte de los concursantes.
 
-## Extras
-Si nos da tiempo tenemos pensado también incluir alguna pregunta tipo muerte súbita en caso de que la partida quedara empate.
+

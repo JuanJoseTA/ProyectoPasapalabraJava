@@ -18,22 +18,18 @@
 
 ### RF01 Acceso a la partida.
 
-#### RF01.1 Nombre de jugador. Deberán introducir el nombre por teclado cada uno de forma ordenada.
-
-	RF01.1.1 Jugador 1. Deberá ser el primer nombre introducido.
-
-	RF01.1.2 Jugador 2. Deberá ser el segundo nombre introducido.
+#### RF01.1 Nombre de jugador. Deberán introducir el nombre por teclado cada uno de forma ordenada. El jugador 1 deberá ser el primer nombre introducido y el jugador 2 deberá ser el segundo nombre introducido.
 
 
-### RF02 Jugar una partida.
+### RF02 Jugar una partida. Necesitamos 2 jugadores.
 
-#### RF02.1 Ronda
+#### RF02.1 Ronda. Cada ronda será una letra.
 
 	RF02.1.1 Nº de rondas. Habrá tantas rondas como letras del abecedario, excepto la ñ.
 
 	RF02.1.2 Pregunta de la letra. Se realiza la pregunta aleatoria de la letra correspondiente. Referencia al RF05
 	
-	RF02.1.3 Cronómetro. Cuando se lanza la pregunta se inicia un contador de 15 segundos. Depende de RF02.1.2
+	RF02.1.3 Cronómetro. Cuando se lanza la pregunta se inicia un contador. Depende de RF02.1.2. Se debe cumplir RNF03. 
 	
 		RF02.1.3.1 Reinicio. En caso de rebote se reinicia el contador, ya que no cambia la ronda.
 		
@@ -43,7 +39,7 @@
 		
 		RF02.1.4.2 Respuesta Correcta. En caso de acierto, puntúa al jugador correspondiente y pasa a la siguiente ronda.
 		
-		RF02.1.4.3 Respuesta Incorrecta. Puede ser por fin del tiempo o por respuesta errónea.
+		RF02.1.4.3 Respuesta Incorrecta. Puede ser por fin del tiempo o por respuesta errónea. Depende RNF04.
 		
 			RF02.1.4.3.1 Jugador que inicia la ronda. Si éste falla, se produciría el rebote al otro jugador.
 
@@ -51,23 +47,14 @@
 	
 			RF02.1.4.3.2 Jugador que recibe el rebote. Si éste falla, se pasa a la siguiente ronda(letra) sin que ninguno puntúe.
 			 
-	RF02.1.5 Bonus. Dos rondas normales consecutivas aleatorias. Referencia RF03.2.
-		 
-		RF02.1.5.1 Restriccion. La primera de estas dos rondas, no podrá ser la ronda final. Depende RF02.3
+	RF02.1.5 Bonus. Se trata de dos rondas, la primera será escogida aleatoriamente y la segunda será la posterior a esta. Referencia RF03.2. La primera de estas dos rondas, no podrá ser la ronda final. Depende RF02.3. Debe cumplir RNF011.
 
-#### RF02.2 Turnos. El turno de cada ronda lo marca la letra a responder.
+#### RF02.2 Turnos. El turno de cada ronda lo marca la letra a responder. El turno será siempre el contrario al de la ronda anterior excepto    en la ronda uno que empezará el jugador 1. Depende de RF01.
 	
-	RF02.2.1 Primer turno. Le corresponde al jugador 1. 
-	
-	RF02.2.2 Orden alternado. En cada ronda se deberá alternar el orden de inicio entre los jugadores.
 
 #### RF02.3 Final. Al terminar la última ronda (correspondiente a la letra "z").Depende de RF02.1.
 
-	RF02.3.1 Comparar marcadores. Gana el jugador que tenga mayor puntuación. Depende de RF03.
-	
-		RF02.3.1.1 Empate. En este caso, no hay ganador.
-		
-		RF02.3.1.2 Ganador.
+	RF02.3.1 Comparar marcadores. Se comparan los contadores de cada jugador y gana el jugador que tenga mayor puntuación, si ambos tienen la misma entonces habrá un empate. Depende de RF03. Llama a RF03.1.
 
 
 ### RF03 Sistema de puntuacion
@@ -113,76 +100,36 @@
 
 #### RF04.3 Mostrar contador. Se deberá mostrar en todo momento el numero de aciertos de cada jugador. Depende de RF03.
 
-	RF04.3.1 Contador Jugador 1. Se deberá mostrar su contador de aciertos en la parte izquierda de la pantalla.
-
-		RF04.3.1.1 Pregunta. Si el jugador1 acierta una pregunta, se le actualiza su contador. Depende RF03 y RF02.1.5.
-			
-	RF04.3.2 Contador Jugador 2. Se deberá mostrar su contador de aciertos en la parte derecha de la pantalla.
-			
-		RF04.3.2.1 Pregunta. Si el jugador2 acierta una pregunta, se le actualiza su contador. Depende RF03 y RF02.1.5.
+	RF04.3.1 Contador Jugador x. Se deberá mostrar su contador de aciertos en la parte de la pantalla correspondiente. Si el jugador x acierta una pregunta, se le actualiza su contador.Depende RF03 y RF02.1.5.
 				
-#### RF04.4 Mostrar final. Al acabar la partida se deberá mostrar el resultado. Depende de RF02.3.
+#### RF04.4 Mostrar al final. Al acabar la partida se deberá mostrar el resultado. Depende de RF02.3.
 
-	RF04.4.1 Ganador 1. Se deberá mostrar "GANADOR" y el nombre del jugador 1 si tiene mas aciertos que jugador 2. Depende de RF01.
+	RF04.4.1 Mostrar resultado. Se deberá mostrar el resultado de la partida,(el nombre del jugador que gana o si hay empate). Depende de RF02.3.
 
-	RF04.4.2 Ganador 2. Se deberá mostrar "GANADOR" y el nombre del jugador 2 si tiene mas aciertos que jugador 1. Depende de RF01.
-
-	RF04.4.3 Empate. Se deberá mostrar "EMPATE" si el numero de aciertos de los dos jugadores es el mismo. 
-
-	RF04.4.4 Jugar otra vez. Se deberá mostrar "Jugar otra vez". 
+	RF04.4.2 Jugar otra vez. Se deberá mostrar "Jugar otra vez". 
 			
 
-### RF05 Preguntas
+### RF05 Preguntas. Habrá distintas maneras de formular las preguntas. Al principio de la pregunta o definición, se indicará si la respuesta empieza o contiene por la letra correspondiente a la ronda. Depende de RF02.
 
-#### RF05.1 Tipo. Habrá distintas maneras  de formular las preguntas.
-
-	RF05.1.1 Definición. Proposición que expone con claridad el significado de la palabra a responder.
+#### RF05.1 Definición. Proposición que expone con claridad el significado de la palabra a responder.
 		
-	RF05.1.2 Interrogación. Enunciado con signo de interrogación cuyo propósito es una respuesta.
+#### RF05.2 Interrogación. Enunciado con signo de interrogación cuyo propósito es una respuesta.
 		
-	RF05.1.3 Completar. Enunciado incompleto que debe ser rellenado con una palabra para darle un significado.
+#### RF05.3 Completar. Enunciado incompleto que debe ser rellenado con una palabra para darle un significado.
 		
-#### RF05.2 Indicador. Al principio de la pregunta o definición, se indicará si la respuesta empieza o contiene por la letra correspondiente a la ronda. Depende de RF02.
-	 
-
-### RF06 Respuestas
-
-#### RF06.1 Restricciones. Características que debe cumplir la respuesta para que sea considerada como válida.
-
-	RF06.1.1 Tildes. No se tendrán en cuenta las tildes.
-
-	RF06.1.2 Letra "ñ".La ñ no puede formar parte de la respuesta.
-
-	RF06.1.3 Palabras compuestas. Las palabras no pueden ser compuestas.
-
-	RF06.1.4 Espacios en blanco.Deberá escribirse la respuesta sin espacios.
-
-	RF06.1.5 Caracteres especiales. La respuesta no debe incluir carácteres especiales.
-
-      
-#### RF06.2 Corrección. La respuesta será correcta si se corresponde con la pregunta dada y no contiene ninguna restricción. Referencia a RF05.
-
-
 
 ## Requisitos no funcionales
-### RNF01 Soporte. El sistema estará soportado por PC.
-### Almacenamiento. RNF02 La batería de palabras estará almacenada en ficheros.
+### RNF01 Soporte. El sistema estará soportado por PC. Sólo para navegador.
+### RNF02 Almacenamiento. La batería de palabras estará almacenada en ficheros.
 ### RNF03 Los jugadores tendrán un maximo de 15 segundos para responder cada pregunta.
 ### RNF04 El sistema no distingue entre mayúsculas y minúsculas.
-### RNF05 El sistema no reconocerá las tildes, por lo que el uso de tildes será respuesta incorrecta.
-### RNF05 El sistema no reconocerá los caracteres especiales, por lo que el uso de caracteres especiales será respuesta incorrecta.
-### RNF06 La temática del juego será orientada al conocimiento deportivo.
-### RNF07 Las respuestas deben contener o comenzar por la letra correspondiente al turno.
-### RNF08 El sistema recibe la respuesta en la entrada por teclado.
-### RNF09 El tiempo restante para responder se mostrará en el formato de segundos.
-### RNF10 La letra aleotoria bonus no podrá ser la z.
+### RNF05 El sistema no permitirá el uso de las tildes.
+### RNF06 El sistema no permitirá el uso de los caracteres especiales.
+### RNF07 La temática del juego será orientada al conocimiento deportivo.
+### RNF08 Las respuestas deben contener o comenzar por la letra correspondiente a la ronda.
+### RNF09 El sistema recibe la respuesta en la entrada por teclado.
+### RNF10 El tiempo restante para responder se mostrará en el formato de segundos.
+### RNF11 La primera ronda aleatoria no podrá ser la correspondiente a la letra "z".
 
-### Extra:
-* RF Las letras acertadas aparecen en la parte de la interfaz correspondiente a ese jugador.
-* RF En los aciertos se deberá mostrar por pantalla el color verde.
-* RF Al acertar en la latra bonus, se deberá mostrar por pantalla el color dorado.
-* RF A su vez, en los errores deberá mostrarse por pantalla el color rojo.
-* RF Deberá ganar siempre un jugador.
-* RF Deberá haber preguntas extras con letras aleatorias.
 
 # Apéndices adicionales

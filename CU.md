@@ -1,8 +1,18 @@
 #DOCUMENTO
   
 	##CASOS DE USO
-	
-	• Identificador único: * CU1 Introducir nombre.
+	• Identificador único: * CU1 Iniciar partida.
+	• Autor: Javier Luque Rueda, Juan José Tirado Arregui, Joaquín Ruiz Álvarez, Pablo Frías Campos
+	• Contexto de uso: Los usuarios quieren jugar una partida.
+	• Actor principal: Los usuarios.
+	• Participantes y objetivos: Los usuarios; el objetivo es que ejecuten el juego.
+	• Garantías de éxito y/o Post-condiciones: Se ejecuta correctamente el juego.
+	• Precondiciones y activación: Ganas de divertirse y aprender sobre deportes.
+	• Escenario principal: 1. Se encuentra con la máquina en funcionamiento.
+	                       2. Ejecuta la plataforma del juego.
+	• Escenarios alternativos: 
+
+	• Identificador único: * CU2 Introducir nombre.
 	• Autor: Pablo Frías, Mario Bernáldez y Roberto Gil.
 	• Contexto de uso: Cuando el jugador quiere comenzar la partida.
 	• Actor principal:Jugador.
@@ -16,7 +26,7 @@
 						   4.El nombre se almacena en el sistema.
 	• Escenarios alternativos: Si el nombre no tiene el formato adecuado, se vuelve a pedir.
 	
-	• Identificador único: * CU2 Leer pregunta.
+	• Identificador único: * CU3 Leer pregunta.
 	• Autor: Pablo Frías, Mario Bernáldez y Roberto Gil
 	• Contexto de uso: El jugador se encuentra en una letra y se lanza una pregunta correspondiente a ella.
 	• Actor principal: Jugador.
@@ -31,7 +41,7 @@
 	• Escenarios alternativos:
 	
 	
-	• Identificador único: * CU3 Responder pregunta.
+	• Identificador único: * CU4 Responder pregunta.
 	• Autor: Pablo Frías, Mario Bernáldez y Roberto Gil
 	• Contexto de uso: El jugador se encuentra con una pregunta de una letra.
 	• Actor principal: Jugador.
@@ -49,7 +59,7 @@
 	
 	
 	
-	• Identificador único: * CU4 Consultar validez de la respuesta.
+	• Identificador único: * CU5 Consultar validez de la respuesta.
 	• Autor: Pablo Frías, Mario Bernáldez y Roberto Gil
 	• Contexto de uso: El jugador acaba de responder una pregunta.
 	• Actor principal: Jugador.
@@ -65,7 +75,7 @@
 	
 	
 	
-	• Identificador único: * CU5 Ver solución.
+	• Identificador único: * CU6 Ver solución.
 	• Autor: Pablo Frías, Mario Bernáldez y Roberto Gil
 	• Contexto de uso: El jugador ha fallado el rebote.
 	• Actor principal: El jugador
@@ -82,7 +92,7 @@
 	
 	
 							
-	• Identificador único: * CU6 Ver puntuación.
+	• Identificador único: * CU7 Ver puntuación.
 	• Autor: Pablo Frías, Mario Bernáldez y Roberto Gil
 	• Contexto de uso: El  jugador podrá saber en todo momento su puntuación actual.
 	• Actor principal: El jugador.
@@ -94,7 +104,7 @@
 			       3. El sistema imprime por pantalla la puntuación del jugador.	
 	• Escenarios alternativos:
 		
-	• Identificador único:  * CU7 Ver resultado final.
+	• Identificador único:  * CU8 Ver resultado final.
 	• Autor: Pablo Frías, Mario Bernáldez y Roberto Gil
 	• Contexto de uso: Al terminar la partida se mostrará el resultado de la partida.
 	• Actor principal: El jugador.
@@ -105,19 +115,9 @@
 	                       2. El sistema muestra el resultado final.
 	• Escenarios alternativos: No se acaba la partida por abandono de la plataforma.
 
-	• Identificador único: * CU1 Iniciar partida.
-	• Autor: 
-	• Contexto de uso: Los usuarios quieren jugar una partida.
-	• Actor principal: Los usuarios.
-	• Participantes y objetivos: Los usuarios; el objetivo es que ejecuten el juego.
-	• Garantías de éxito y/o Post-condiciones: Se ejecuta correctamente el juego.
-	• Precondiciones y activación: Ganas de divertirse y aprender sobre deportes.
-	• Escenario principal: 1. Se encuentra con la máquina en funcionamiento.
-	                       2. Ejecuta la plataforma del juego.
-	• Escenarios alternativos: .
-
-	• Identificador único:  * CU8 Consultar tiempo.
-	• Autor: 
+	
+	• Identificador único:  * CU9 Consultar tiempo.
+	• Autor: Javier Luque Rueda, Juan José Tirado Arregui, Joaquín Ruiz Álvarez, Pablo Frías Campos
 	• Contexto de uso: Se está respondiendo una pregunta de una ronda.
 	• Actor principal: El jugador.
 	• Participantes y objetivos: El sistema y el jugador; el objetivo del jugador es saber el tiempo que le queda para responder.
@@ -127,7 +127,51 @@
 	                       2. Durante una ronda se informa del tiempo que le queda.
 	• Escenarios alternativos: 
 
+
+	Identificador único:  * CU10 Consultar rebote.
+	• Autor: Javier Luque Rueda, Juan José Tirado Arregui, Joaquín Ruiz Álvarez, Pablo Frías Campos, Carlos Pino Padilla
+	• Contexto de uso: Se lanza la misma pregunta al jugador que no ha contestado primero.
+	• Actor principal: El jugador.
+	• Participantes y objetivos: El sistema y el jugador; el objetivo del jugador es saber que hay rebote y debe contestar a la misma pregunta.
+	• Garantías de éxito y/o Post-condiciones: Se muestra por pantalla "REBOTE".
+	• Precondiciones y activación:  Primer jugador en contestar en la ronda falla.
+	• Escenario principal: 1. El jugador se encuentra en partida.
+	                       2. Durante la ronda se informa si hay rebote.
+	• Escenarios alternativos: No hay rebote. (El primer jugador acierta)
+
 	
+	Identificador único:  * CU11 Consultar bonus.
+	• Autor: Javier Luque Rueda, Juan José Tirado Arregui, Joaquín Ruiz Álvarez, Pablo Frías Campos, Carlos Pino Padilla
+	• Contexto de uso: Al lanzarse la pregunta, se mostrará si tiene bonus.
+	• Actor principal: El jugador.
+	• Participantes y objetivos: El sistema y el jugador; el objetivo del jugador es saber que la pregunta tiene bonus.
+	• Garantías de éxito y/o Post-condiciones: Se muestra por pantalla "BONUS" y "Puntuación doble".
+	• Precondiciones y activación:  La letra de la ronda es la elegida para el bonus aleatoriamente.
+	• Escenario principal: 1. El jugador se encuentra en partida.
+	                       2. Durante la ronda se informa si hay bonus.
+	• Escenarios alternativos: No hay bonus (ronda normal).
+
+	Identificador único:  * CU12 Jugar otra vez.
+	• Autor: Javier Luque Rueda, Juan José Tirado Arregui, Joaquín Ruiz Álvarez, Pablo Frías Campos, Carlos Pino Padilla
+	• Contexto de uso: Termina partida y juega otra vez.
+	• Actor principal: El jugador.
+	• Participantes y objetivos: El sistema y el jugador; el objetivo es que puedan volver a jugar otra partida.
+	• Garantías de éxito y/o Post-condiciones: Se muestra por pantalla "jugar otra vez".
+	• Precondiciones y activación:  Termina la partida.
+	• Escenario principal: 1. El jugador se encuentra en partida.
+	                       2. Acaban las rondas.
+	• Escenarios alternativos: 
+
+	Identificador único:  * CU13 Gestión de preguntas.
+	• Autor: Javier Luque Rueda, Juan José Tirado Arregui, Joaquín Ruiz Álvarez, Pablo Frías Campos, Carlos Pino Padilla
+	• Contexto de uso: De dónde salen las preguntas.
+	• Actor principal: El administrador. 
+	• Participantes y objetivos: Administrador, que salga la pregunta correspondiente a la ronda en la partida.
+	• Garantías de éxito y/o Post-condiciones: 
+	• Precondiciones y activación: 
+	• Escenario principal: 
+	• Escenarios alternativos:
+
 			       
 
 

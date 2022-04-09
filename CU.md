@@ -35,7 +35,7 @@
 	• Autor: Pablo Frías, Mario Bernáldez y Roberto Gil
 	• Contexto de uso: El jugador se encuentra con una pregunta de una letra.
 	• Actor principal: Jugador.
-	• Participantes y objetivos: El sistema y el jugador.El objetivo es responer la pregunta lanzada.
+	• Participantes y objetivos: El sistema y el jugador.El objetivo es responder la pregunta lanzada.
 	• Garantías mínimas: Que se pida por teclado introducir la respuesta.
 	• Garantías de éxito y/o Post-condiciones: Que el jugador responda la pregunta.
 	• Precondiciones y activación: Que se haya comenzado el juego y el jugador haya visto mostrada la pregunta por pantalla.
@@ -49,18 +49,18 @@
 	
 	
 	
-	• Identificador único: * CU4 Consultar resolución de pregunta.
+	• Identificador único: * CU4 Consultar validez de la respuesta.
 	• Autor: Pablo Frías, Mario Bernáldez y Roberto Gil
 	• Contexto de uso: El jugador acaba de responder una pregunta.
 	• Actor principal: Jugador.
 	• Participantes y objetivos: El sistema y el jugador.El objetivo es saber por el jugador si la pregunta es correcta o no. 
-	• Garantías de éxito y/o Post-condiciones: Que se muestre por pantalla la resolución de dicha pregunta.
+	• Garantías de éxito y/o Post-condiciones: Que se muestre por pantalla "CORRECTO" o "INCORRECTO".
 	• Precondiciones y activación: El jugador ha respondido a una pregunta.
 	• Escenario principal: 1. El jugador se encuentra en la partida.
 						   2. El jugador ha respondido una pregunta.
 						   3. El sistema comprueba en la base de datos que la respuesta es correcta.
-						   4. El sistema muestra por pantalla la resolución.
-	• Escenarios alternativos: Si no ha respondido, se muestra por pantalla "TIEMPO".
+						   4. El sistema muestra por pantalla la corrección.
+	• Escenarios alternativos: Si no ha respondido dentro del tiempo, se muestra por pantalla "TIEMPO".
 	
 	
 	
@@ -68,7 +68,7 @@
 	• Identificador único: * CU5 Ver solución.
 	• Autor: Pablo Frías, Mario Bernáldez y Roberto Gil
 	• Contexto de uso: El jugador ha fallado el rebote.
-	• Actor principal: El sistema
+	• Actor principal: El jugador
 	• Participantes y objetivos: El sistema y los dos jugadores. El objetivo es saber la pregunta fallada.
 	• Garantías de éxito y/o Post-condiciones: Que se muestre por pantalla la respuesta.
 	• Precondiciones y activación: Que hayan fallado ambos jugadores la pregunta.
@@ -76,38 +76,59 @@
 						   2. El rebote es fallado.
 						   3. El sistema busca en la base de datos la respuesta.
 						   4. El sistema muestra por pantalla la palabra.
-	• Escenarios alternativos: Si acierta el rebote, no hace falta que muestre nada.								
+	• Escenarios alternativos: Si el primer jugador en responder acierta acierta el rebote, no hace falta que muestre nada.								
 	
 	
 	
 	
 							
-	• Identificador único: * CU6 Ver puntuación(1)
+	• Identificador único: * CU6 Ver puntuación.
 	• Autor: Pablo Frías, Mario Bernáldez y Roberto Gil
 	• Contexto de uso: El  jugador podrá saber en todo momento su puntuación actual.
-	• Actor principal: El sistema.
+	• Actor principal: El jugador.
 	• Participantes y objetivos: EL sistema y el jugador; el objetivo es mostrar la puntuación del jugador. 
-	• Garantías de éxito y/o Post-condiciones: Se muestrar en pantalla la puntuación del jugador actualizada.
-	• Precondiciones y activación: Cada vez que un jugador responda una pregunta.
+	• Garantías de éxito y/o Post-condiciones: Se muestra en pantalla la puntuación del jugador actualizada.
+	• Precondiciones y activación: Que la partida haya empezado.
 	• Escenario principal: 1. El jugador se encuentra en la partida.
-			       2. El sistema lleva un recuento del numero de puntos obtenidos, siendo 1 en caso de acierto, y 2 en caso de acierto estando en la letra bonus. 
+			       2. El sistema lleva un recuento del número de puntos obtenidos. 
 			       3. El sistema imprime por pantalla la puntuación del jugador.	
-	• Escenarios alternativos: Si no tiene puntuación, se mostrará por pantalla "0".
+	• Escenarios alternativos:
 		
-	• Identificador único:  * CU7 Ver puntuación(2)
+	• Identificador único:  * CU7 Ver resultado final.
 	• Autor: Pablo Frías, Mario Bernáldez y Roberto Gil
-	• Contexto de uso: Al terminar la partida se mostrará el ganador.
-	• Actor principal: El sistema.
-	• Participantes y objetivos: El sistema y el jugador; el objetivo es informar a los jugadores, de quién ha sido el ganador.
-	• Garantías de éxito y/o Post-condiciones: Se mostrará por pantalla, el nombre del jugador que haya ganado junto con su puntuación
-	• Precondiciones y activación: Se deben haber completado todas las letras.
-	• Escenario principal: 1. El sistema busca cuál ha sido la puntuación mas alta.
-			       2. El sistema mira el nombre asociado a la mayor puntuación.
-			       3. El sistema imprime por pantalla el nombre del jugador junto con el mensaje "ha ganado".
-	• Escenarios alternativos
-			       1. El sistema busca cuál ha sido la puntuación más alta, siendo iguales ambas.
-			       2. El sistema muestra por pantalla "Empate".
-			       3. (Se pasa a muerte súbita).
+	• Contexto de uso: Al terminar la partida se mostrará el resultado de la partida.
+	• Actor principal: El jugador.
+	• Participantes y objetivos: El sistema y el jugador; el objetivo es informar a los jugadores del resultado de la partida.
+	• Garantías de éxito y/o Post-condiciones: Se mostrará por pantalla el resultado.
+	• Precondiciones y activación: Se deben haber completado todas las rondas.
+	• Escenario principal: 1. Acaban las rondas.
+	                       2. El sistema muestra el resultado final.
+	• Escenarios alternativos: No se acaba la partida por abandono de la plataforma.
+
+	• Identificador único: * CU1 Iniciar partida.
+	• Autor: 
+	• Contexto de uso: Los usuarios quieren jugar una partida.
+	• Actor principal: Los usuarios.
+	• Participantes y objetivos: Los usuarios; el objetivo es que ejecuten el juego.
+	• Garantías de éxito y/o Post-condiciones: Se ejecuta correctamente el juego.
+	• Precondiciones y activación: Ganas de divertirse y aprender sobre deportes.
+	• Escenario principal: 1. Se encuentra con la máquina en funcionamiento.
+	                       2. Ejecuta la plataforma del juego.
+	• Escenarios alternativos: .
+
+	• Identificador único:  * CU8 Consultar tiempo.
+	• Autor: 
+	• Contexto de uso: Se está respondiendo una pregunta de una ronda.
+	• Actor principal: El jugador.
+	• Participantes y objetivos: El sistema y el jugador; el objetivo del jugador es saber el tiempo que le queda para responder.
+	• Garantías de éxito y/o Post-condiciones: 
+	• Precondiciones y activación: Se ha lanzado la pregunta.
+	• Escenario principal: 1. El jugador se encuentra en partida.
+	                       2. Durante una ronda se informa del tiempo que le queda.
+	• Escenarios alternativos: 
+
+	
+			       
 
 
 

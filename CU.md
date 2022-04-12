@@ -10,10 +10,11 @@
 	• Precondiciones y activación: Ganas de divertirse y aprender sobre deportes.
 	• Escenario principal: 1. Se encuentra con la máquina en funcionamiento.
 	                       2. Ejecuta la plataforma del juego.
-	• Escenarios alternativos: 
+	• Escenarios alternativos: 1. No se ejecuta correctamente el juego por fallo.
+
 
 	• Identificador único: * CU2 Introducir nombre.
-	• Autor: Pablo Frías, Mario Bernáldez y Roberto Gil.
+	• Autor: Pablo Frías, Mario Bernáldez, Roberto Gil, Joaquín Ruiz Alvarez y Juan Jose Tirado Arregui.
 	• Contexto de uso: Cuando el jugador quiere comenzar la partida.
 	• Actor principal:Jugador.
 	• Participantes y objetivos: Jugador y el sistema. Introducir el alias en el sistema.
@@ -22,18 +23,19 @@
 	• Precondiciones y activación: El jugador ha ejecutado el juego.
 	• Escenario principal: 1.El jugador se conecta a la partida.
 						   2.Se pide introducir el nombre por pantalla.
-						   3.El jugador teclea el alias
+						   3.El jugador teclea el alias.
 						   4.El nombre se almacena en el sistema.
 	• Escenarios alternativos: Si el nombre no tiene el formato adecuado, se vuelve a pedir.
 	
+
 	• Identificador único: * CU3 Leer pregunta.
-	• Autor: Pablo Frías, Mario Bernáldez y Roberto Gil
+	• Autor: Pablo Frías, Mario Bernáldez, Roberto Gil, Joaquín Ruiz Alvarez y Juan Jose Tirado Arregui.
 	• Contexto de uso: El jugador se encuentra en una letra y se lanza una pregunta correspondiente a ella.
 	• Actor principal: Jugador.
 	• Participantes y objetivos: El sistema y el jugador. El objetivo es plantearle una pregunta al jugador.
 	• Garantías mínimas: Que la pregunta sea leída por el jugador.
 	• Garantías de éxito y/o Post-condiciones: Que se muestre la pregunta correctamente.
-	• Precondiciones y activación: Que se haya comenzado el juego y estar en una letra del sistema.
+	• Precondiciones y activación: Que se haya comenzado el juego y estar en una ronda de la partida.
 	• Escenario principal: 1.El jugador se encuentra en la partida.
 						   2.Al jugador le toca contestar una letra.
 						   3.El sistema elige aleatoriamente en la base de datos una pregunta de esa letra.
@@ -42,10 +44,10 @@
 	
 	
 	• Identificador único: * CU4 Responder pregunta.
-	• Autor: Pablo Frías, Mario Bernáldez y Roberto Gil
+	• Autor: Pablo Frías, Mario Bernáldez, Roberto Gil, Carlos Pino Padilla, Joaquín Ruiz Alvarez y Juan Jose Tirado Arregui.
 	• Contexto de uso: El jugador se encuentra con una pregunta de una letra.
 	• Actor principal: Jugador.
-	• Participantes y objetivos: El sistema y el jugador.El objetivo es responder la pregunta lanzada.
+	• Participantes y objetivos: El sistema y el jugador. El objetivo es responder la pregunta lanzada.
 	• Garantías mínimas: Que se pida por teclado introducir la respuesta.
 	• Garantías de éxito y/o Post-condiciones: Que el jugador responda la pregunta.
 	• Precondiciones y activación: Que se haya comenzado el juego y el jugador haya visto mostrada la pregunta por pantalla.
@@ -53,17 +55,17 @@
 						   2.El sistema lanza una pregunta y el jugador la lee.
 						   3.El sistema pide introducir por teclado la respuesta.
 						   4.El jugador responde la pregunta.
-	• Escenarios alternativos: Si el jugador no responde la pregunta o la responde con un formato no permitido,
-							   el sistema la dará por incorrecta.
-								
-	
+	• Escenarios alternativos: 1. El jugador se encuentra en la partida.
+							   2. El sistema lanza una pregunta y el jugador la lee.
+							   3. El sistema pide introducir por teclado la respuesta.
+							   4. Pasa el tiempo sin responder.
 	
 	
 	• Identificador único: * CU5 Consultar validez de la respuesta.
 	• Autor: Pablo Frías, Mario Bernáldez y Roberto Gil
 	• Contexto de uso: El jugador acaba de responder una pregunta.
 	• Actor principal: Jugador.
-	• Participantes y objetivos: El sistema y el jugador.El objetivo es saber por el jugador si la pregunta es correcta o no. 
+	• Participantes y objetivos: El sistema y el jugador. El objetivo es saber por el jugador si la pregunta es correcta o no. 
 	• Garantías de éxito y/o Post-condiciones: Que se muestre por pantalla "CORRECTO" o "INCORRECTO".
 	• Precondiciones y activación: El jugador ha respondido a una pregunta.
 	• Escenario principal: 1. El jugador se encuentra en la partida.
@@ -73,24 +75,20 @@
 	• Escenarios alternativos: Si no ha respondido dentro del tiempo, se muestra por pantalla "TIEMPO".
 	
 	
-	
-	
 	• Identificador único: * CU6 Ver solución.
-	• Autor: Pablo Frías, Mario Bernáldez y Roberto Gil
+	• Autor: Pablo Frías, Mario Bernáldez, Roberto Gil, Carlos Pino Padilla, Joaquín Ruiz Alvarez y Juan Jose Tirado Arregui.
 	• Contexto de uso: El jugador ha fallado el rebote.
 	• Actor principal: El jugador
 	• Participantes y objetivos: El sistema y los dos jugadores. El objetivo es saber la pregunta fallada.
 	• Garantías de éxito y/o Post-condiciones: Que se muestre por pantalla la respuesta.
 	• Precondiciones y activación: Que hayan fallado ambos jugadores la pregunta.
 	• Escenario principal: 1. El jugador se encuentra en la partida
-						   2. El rebote es fallado.
-						   3. El sistema busca en la base de datos la respuesta.
-						   4. El sistema muestra por pantalla la palabra.
+						   2. El jugador se encuentra en una ronda.
+						   3. El jugador recibe el rebote
+						   4. El rebote es fallado.
+						   5. El sistema busca en la base de datos la respuesta.
+						   6. El sistema muestra por pantalla la palabra.
 	• Escenarios alternativos: Si el primer jugador en responder acierta acierta el rebote, no hace falta que muestre nada.								
-	
-	
-	
-	
 							
 	• Identificador único: * CU7 Ver puntuación.
 	• Autor: Pablo Frías, Mario Bernáldez y Roberto Gil
@@ -104,6 +102,7 @@
 			       3. El sistema imprime por pantalla la puntuación del jugador.	
 	• Escenarios alternativos:
 		
+
 	• Identificador único:  * CU8 Ver resultado final.
 	• Autor: Pablo Frías, Mario Bernáldez y Roberto Gil
 	• Contexto de uso: Al terminar la partida se mostrará el resultado de la partida.
@@ -136,7 +135,9 @@
 	• Garantías de éxito y/o Post-condiciones: Se muestra por pantalla "REBOTE".
 	• Precondiciones y activación:  Primer jugador en contestar en la ronda falla.
 	• Escenario principal: 1. El jugador se encuentra en partida.
-	                       2. Durante la ronda se informa si hay rebote.
+	                       2. El jugador se encuentra en una ronda.
+						   3. El jugador recibe el rebote.
+						   4. Durante la ronda se informa si hay rebote.
 	• Escenarios alternativos: No hay rebote. (El primer jugador acierta)
 
 	
@@ -148,8 +149,10 @@
 	• Garantías de éxito y/o Post-condiciones: Se muestra por pantalla "BONUS" y "Puntuación doble".
 	• Precondiciones y activación:  La letra de la ronda es la elegida para el bonus aleatoriamente.
 	• Escenario principal: 1. El jugador se encuentra en partida.
-	                       2. Durante la ronda se informa si hay bonus.
+	                       2. El jugador se encuentra en una ronda.
+						   3. Durante la ronda se informa si hay bonus.
 	• Escenarios alternativos: No hay bonus (ronda normal).
+
 
 	Identificador único:  * CU12 Jugar otra vez.
 	• Autor: Javier Luque Rueda, Juan José Tirado Arregui, Joaquín Ruiz Álvarez, Pablo Frías Campos, Carlos Pino Padilla
@@ -160,7 +163,8 @@
 	• Precondiciones y activación:  Termina la partida.
 	• Escenario principal: 1. El jugador se encuentra en partida.
 	                       2. Acaban las rondas.
-	• Escenarios alternativos: 
+	• Escenarios alternativos: 1. Cierra la plataforma
+
 
 	Identificador único:  * CU13 Gestión de preguntas.
 	• Autor: Javier Luque Rueda, Juan José Tirado Arregui, Joaquín Ruiz Álvarez, Pablo Frías Campos, Carlos Pino Padilla

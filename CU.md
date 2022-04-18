@@ -27,8 +27,20 @@
 						   4.El nombre se almacena en el sistema.
 	• Escenarios alternativos: Si el nombre no tiene el formato adecuado, se vuelve a pedir.
 	
+	• Identificador único: * CU3 Consultar ronda.
+	• Autor: Joaquín Ruiz Alvarez y Javier Luque Rueda.
+	• Contexto de uso: Comienza una ronda y el jugador puede ver todos los aspectos de ella.
+	• Actor principal: Jugador.
+	• Participantes y objetivos: El sistema y el jugador. El objetivo es que el jugador pueda consultar todo lo relacionado con una ronda.
+	• Garantías mínimas: Que conozca lo relacionado con la ronda.
+	• Garantías de éxito y/o Post-condiciones: Que se muestren las funcionalidades correctamente.
+	• Precondiciones y activación: Que se haya comenzado el juego y estar en una ronda de la partida.
+	• Escenario principal: 1.El jugador se encuentra en la partida.
+						   2.Se encuentra en una parte de la ronda.
+						   3.Se muestra por pantalla los aspectos correspondientes.
+	• Escenarios alternativos: 1. No se muestra por pantalla lo necesario.
 
-	• Identificador único: * CU3 Leer pregunta.
+	• Identificador único: * CU4 Leer pregunta.
 	• Autor: Pablo Frías, Mario Bernáldez, Roberto Gil, Joaquín Ruiz Alvarez y Juan Jose Tirado Arregui.
 	• Contexto de uso: El jugador se encuentra en una letra y se lanza una pregunta correspondiente a ella.
 	• Actor principal: Jugador.
@@ -40,10 +52,10 @@
 						   2.Al jugador le toca contestar una letra.
 						   3.El sistema elige aleatoriamente en la base de datos una pregunta de esa letra.
 						   4.El sitema manda la pregunta.
-	• Escenarios alternativos:
+	• Escenarios alternativos: 1. No se muestra por pantalla la pregunta.
 	
 	
-	• Identificador único: * CU4 Responder pregunta.
+	• Identificador único: * CU5 Responder pregunta.
 	• Autor: Pablo Frías, Mario Bernáldez, Roberto Gil, Carlos Pino Padilla, Joaquín Ruiz Alvarez y Juan Jose Tirado Arregui.
 	• Contexto de uso: El jugador se encuentra con una pregunta de una letra.
 	• Actor principal: Jugador.
@@ -61,7 +73,7 @@
 							   4. Pasa el tiempo sin responder.
 	
 	
-	• Identificador único: * CU5 Consultar validez de la respuesta.
+	• Identificador único: * CU6 Consultar validez de la respuesta.
 	• Autor: Pablo Frías, Mario Bernáldez y Roberto Gil
 	• Contexto de uso: El jugador acaba de responder una pregunta.
 	• Actor principal: Jugador.
@@ -75,7 +87,7 @@
 	• Escenarios alternativos: Si no ha respondido dentro del tiempo, se muestra por pantalla "TIEMPO".
 	
 	
-	• Identificador único: * CU6 Ver solución.
+	• Identificador único: * CU7 Ver solución.
 	• Autor: Pablo Frías, Mario Bernáldez, Roberto Gil, Carlos Pino Padilla, Joaquín Ruiz Alvarez y Juan Jose Tirado Arregui.
 	• Contexto de uso: El jugador ha fallado el rebote.
 	• Actor principal: El jugador
@@ -90,7 +102,7 @@
 						   6. El sistema muestra por pantalla la palabra.
 	• Escenarios alternativos: Si el primer jugador en responder acierta acierta el rebote, no hace falta que muestre nada.								
 							
-	• Identificador único: * CU7 Ver puntuación.
+	• Identificador único: * CU8 Ver puntuación.
 	• Autor: Pablo Frías, Mario Bernáldez y Roberto Gil
 	• Contexto de uso: El  jugador podrá saber en todo momento su puntuación actual.
 	• Actor principal: El jugador.
@@ -100,10 +112,10 @@
 	• Escenario principal: 1. El jugador se encuentra en la partida.
 			       2. El sistema lleva un recuento del número de puntos obtenidos. 
 			       3. El sistema imprime por pantalla la puntuación del jugador.	
-	• Escenarios alternativos:
+	• Escenarios alternativos: 1.No se muestra por pantalla el contador.
 		
 
-	• Identificador único:  * CU8 Ver resultado final.
+	• Identificador único:  * CU9 Ver resultado final.
 	• Autor: Pablo Frías, Mario Bernáldez y Roberto Gil
 	• Contexto de uso: Al terminar la partida se mostrará el resultado de la partida.
 	• Actor principal: El jugador.
@@ -115,7 +127,7 @@
 	• Escenarios alternativos: No se acaba la partida por abandono de la plataforma.
 
 	
-	• Identificador único:  * CU9 Consultar tiempo.
+	• Identificador único:  * CU10 Consultar tiempo.
 	• Autor: Javier Luque Rueda, Juan José Tirado Arregui, Joaquín Ruiz Álvarez, Pablo Frías Campos
 	• Contexto de uso: Se está respondiendo una pregunta de una ronda.
 	• Actor principal: El jugador.
@@ -124,10 +136,10 @@
 	• Precondiciones y activación: Se ha lanzado la pregunta.
 	• Escenario principal: 1. El jugador se encuentra en partida.
 	                       2. Durante una ronda se informa del tiempo que le queda.
-	• Escenarios alternativos: 
+	• Escenarios alternativos: 1.No se muestra el tiempo
 
 
-	Identificador único:  * CU10 Consultar rebote.
+	Identificador único:  * CU11 Consultar rebote.
 	• Autor: Javier Luque Rueda, Juan José Tirado Arregui, Joaquín Ruiz Álvarez, Pablo Frías Campos, Carlos Pino Padilla
 	• Contexto de uso: Se lanza la misma pregunta al jugador que no ha contestado primero.
 	• Actor principal: El jugador.
@@ -141,7 +153,7 @@
 	• Escenarios alternativos: No hay rebote. (El primer jugador acierta)
 
 	
-	Identificador único:  * CU11 Consultar bonus.
+	Identificador único:  * CU12 Consultar bonus.
 	• Autor: Javier Luque Rueda, Juan José Tirado Arregui, Joaquín Ruiz Álvarez, Pablo Frías Campos, Carlos Pino Padilla
 	• Contexto de uso: Al lanzarse la pregunta, se mostrará si tiene bonus.
 	• Actor principal: El jugador.
@@ -154,7 +166,7 @@
 	• Escenarios alternativos: No hay bonus (ronda normal).
 
 
-	Identificador único:  * CU12 Jugar otra vez.
+	Identificador único:  * CU13 Jugar otra vez.
 	• Autor: Javier Luque Rueda, Juan José Tirado Arregui, Joaquín Ruiz Álvarez, Pablo Frías Campos, Carlos Pino Padilla
 	• Contexto de uso: Termina partida y juega otra vez.
 	• Actor principal: El jugador.
@@ -166,7 +178,7 @@
 	• Escenarios alternativos: 1. Cierra la plataforma
 
 
-	Identificador único:  * CU13 Gestión de preguntas.
+	Identificador único:  * CU14 Gestión de preguntas.
 	• Autor: Javier Luque Rueda, Juan José Tirado Arregui, Joaquín Ruiz Álvarez, Pablo Frías Campos, Carlos Pino Padilla
 	• Contexto de uso: De dónde salen las preguntas.
 	• Actor principal: El administrador. 

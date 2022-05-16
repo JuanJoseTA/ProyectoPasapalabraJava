@@ -1,5 +1,52 @@
 package pasadeporte;
 
-public class Pregunta {
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.util.Random;
 
+public class Pregunta {
+	
+	private String solucion;
+	private String pregunta;
+	
+	public Pregunta(int ronda) {
+		char letra = (char) (ronda + 96);
+		File archivo = null;
+		FileReader fr = null;
+	    BufferedReader br = null;
+	    BufferedReader br2 = null;
+	    int numPreg = 0;
+	    int numPregAl;
+	    Random r = new Random();
+	    try {
+	         // Apertura del fichero y creacion de BufferedReader para poder
+	         // hacer una lectura comoda (disponer del metodo readLine()).
+	         archivo = new File (letra+".txt");
+	         fr = new FileReader (archivo);
+	         br = new BufferedReader(fr);
+	         br2 = new BufferedReader(fr);
+	         String linea;
+	         while((linea=br.readLine())!=null) {
+	            numPreg++;
+	         }
+	         numPregAl = r.nextInt(numPreg);
+	         int i = 0;
+	         while()
+		}catch(Exception e){
+	         e.printStackTrace();
+	      }
+	}
+	
+	public void preguntar() {
+		System.out.println(pregunta);
+	}
+	
+	public void mostrarSolucion() {
+		System.out.println(solucion);
+	}
+	
+	public boolean respuesta(String respuesta) {
+		return solucion.equalsIgnoreCase(respuesta);
+	}
 }

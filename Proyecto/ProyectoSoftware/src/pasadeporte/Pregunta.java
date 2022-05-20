@@ -32,7 +32,15 @@ public class Pregunta {
 	         }
 	         numPregAl = r.nextInt(numPreg);
 	         int i = 0;
-	         while()
+	         while(i != numPregAl){
+				 i++;
+				 br2.readLine();
+			 }
+			 String cadena = br2.readLine();
+			 String delimitadores = "[;]";
+			 String[] palabrasSeparadas = cadena.split(delimitadores);
+			 pregunta = palabrasSeparadas[0];
+			 solucion = palabrasSeparadas[1];
 		}catch(Exception e){
 	         e.printStackTrace();
 	      }

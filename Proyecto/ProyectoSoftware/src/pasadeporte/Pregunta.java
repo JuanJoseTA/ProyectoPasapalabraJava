@@ -26,8 +26,7 @@ public class Pregunta {
 	         fr = new FileReader (archivo);
 	         br = new BufferedReader(fr);
 	         br2 = new BufferedReader(fr);
-	         String linea;
-	         while((linea=br.readLine())!=null) {
+	         while((br.readLine())!=null) {
 	            numPreg++;
 	         }
 	         numPregAl = r.nextInt(numPreg);

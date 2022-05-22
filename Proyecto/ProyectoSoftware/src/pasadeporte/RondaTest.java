@@ -48,5 +48,12 @@ class RondaTest {
 	void testProcesoRonda() {
 		fail("Not yet implemented");
 	}
+	
+	@Test 
+	void testGetNumero() {
+		assertTrue(r.getNumero()>0 && r.getNumero()<27,"Número de ronda valido");
+	}
+	
+	
 
 }

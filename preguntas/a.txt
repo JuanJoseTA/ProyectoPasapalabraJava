@@ -1,8 +1,8 @@
-Empieza con A: Persona que cuida de la aplicación del reglamento, sanciona las infracciones o fallos y valida los resultados. ; Arbitro
-Empieza con A: Color de la bandera mostrada en señal de peligro en Formula 1. ; Amarilla
-Empieza con A: Es una parte fundamental en un coche de Formula 1 que existe en el eje delantero y el trasero ; Aleron
-Empieza con A: Jugada de tenis en la que el jugador obtiene directamente un tanto al efectuar un saque sin que el adversario consiga tocar la pelota. ; Ace
-Empieza por A: ¿Cual es el primer apellido del futbolista mas laureado de la historia? ; Alves
-Empieza por A: Cuando hay más agua entre los neumáticos y la carretera de la que puede ser desplazada por la banda de rodadura de neumáticos y este pierde el control. ; Aquaplaning
-Empieza por A: Primer apellido del piloto español dos veces Campeón Mundial de Pilotos de Fórmula 1 en 2005 y 2006. ; Alonso
-Contiene la A: Equipo de la NBA donde Pau Gasol ganó un anillo. ; Lakers
+Empieza con A: Persona que cuida de la aplicación del reglamento, sanciona las infracciones o fallos y valida los resultados.;sArbitro
+Empieza con A: Color de la bandera mostrada en señal de peligro en Formula 1.;Amarilla
+Empieza con A: Es una parte fundamental en un coche de Formula 1 que existe en el eje delantero y el trasero;Aleron
+Empieza con A: Jugada de tenis en la que el jugador obtiene directamente un tanto al efectuar un saque sin que el adversario consiga tocar la pelota.;Ace
+Empieza por A: ¿Cual es el primer apellido del futbolista mas laureado de la historia?;Alves
+Empieza por A: Cuando hay más agua entre los neumáticos y la carretera de la que puede ser desplazada por la banda de rodadura de neumáticos y este pierde el control.;Aquaplaning
+Empieza por A: Primer apellido del piloto español dos veces Campeón Mundial de Pilotos de Fórmula 1 en 2005 y 2006.;Alonso
+Contiene la A: Equipo de la NBA donde Pau Gasol ganó un anillo.;Lakers

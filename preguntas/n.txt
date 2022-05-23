@@ -1,3 +1,3 @@
-Empieza con la N: Color de la última cinta que puedes conseguir en las artes marciales. ; Negro
-Empieza con la N: Deporte mas practicado del mundo. ; Natacion
-Empieza por la N: Primer apellido del tenista que mas veces ha ganado el torneo Roland Garros. ; Nadal
+Empieza con la N: Color de la última cinta que puedes conseguir en las artes marciales.;Negro
+Empieza con la N: Deporte mas practicado del mundo.;Natacion
+Empieza por la N: Primer apellido del tenista que mas veces ha ganado el torneo Roland Garros.;Nadal

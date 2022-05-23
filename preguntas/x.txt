@@ -1,2 +1,2 @@
-Contiene la X: ¿De qué deporte se han tomado expresiones como “tirar la toalla” o “salvado por la campana”? ; Boxeo
-Contiene la X: Nombre de la jugadora ganadora del balón de oro en el año 2022. ; Alexia
+Contiene la X: ¿De qué deporte se han tomado expresiones como “tirar la toalla” o “salvado por la campana”?;Boxeo
+Contiene la X: Nombre de la jugadora ganadora del balón de oro en el año 2022.;Alexia

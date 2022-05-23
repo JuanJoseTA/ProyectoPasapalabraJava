@@ -1,4 +1,4 @@
-Empieza con la D: Trozo de tela con un número, que llevan a la espalda los participantes en muchos deportes. ; Dorsal
-Empieza con la D: Siglas del dispositivo introducido en la Formula 1 con el propósito de reducir carga aerodinámica y realizar adelantamientos. ; DRS
+Empieza con la D: Trozo de tela con un número, que llevan a la espalda los participantes en muchos deportes.;Dorsal
+Empieza con la D: Siglas del dispositivo introducido en la Formula 1 con el propósito de reducir carga aerodinámica y realizar adelantamientos.;DRS
 
 

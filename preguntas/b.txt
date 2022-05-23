@@ -1,0 +1,7 @@
+Empieza con la B: ¿Qué selección ha ganado mas mundiales de fútbol? ; Brasil
+Empieza con la B: ¿Cual es el apellido del atleta que logró el récord plusmarca de velocidad en la prueba de los 100 metros lisos? ; Bolt
+Empieza con la B: ¿Qué deporte practican los Harlem Globetrotters? ; Baloncesto
+Empieza con la B: ¿En qué deporte puedes hacer una tacada? ; Billar
+Empieza por B: Formación de ampollas en los neumáticos, causado por un uso excesivo. ; Blistering
+Empieza por B: Lugar donde se produce la parada que hace un vehículo durante la competición para repostar, cambiar los neumáticos, reparaciones, etc… ; Boxes
+

@@ -30,6 +30,7 @@ public class Ronda {
 	public void procesoRonda(Jugador principal,Jugador rebote,Temporizador t) {
 		Pregunta p=new Pregunta(numero);
 		String r = null;
+		System.out.println("Responde "+ principal.getNombre()+"\n");
 		p.preguntar();
 		t.iniciar();
 		while(t.tiempoPasado()<=15 && r==null) {
@@ -45,6 +46,7 @@ public class Ronda {
 		    principal.sumar(esBonus());
 		}else {
 			 System.out.println("INCORRECTO, HAY REBOTE\n");
+			 System.out.println("Responde "+ rebote.getNombre()+"\n");
 			 p.preguntar();
 			 t.reiniciar();
 			 t.iniciar();

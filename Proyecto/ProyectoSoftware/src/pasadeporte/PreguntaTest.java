@@ -1,6 +1,5 @@
 package pasadeporte;
 
-import static org.junit.Assert.assertNull;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.AfterAll;
@@ -9,14 +8,10 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-class RondaTest {
-	
-	private static Ronda r;
+class PreguntaTest {
 
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
-		assertNull(r.getNumero(),"exito");
-		assertNull(r.getRondaBonus(),"exito");
 	}
 
 	@AfterAll
@@ -25,27 +20,29 @@ class RondaTest {
 
 	@BeforeEach
 	void setUp() throws Exception {
-		r=new Ronda();
 	}
 
 	@AfterEach
 	void tearDown() throws Exception {
-		r=null;
 	}
 
 	@Test
-	void testGenerarRondaBonus() {
-		r.generarRondaBonus();
-		assertAll(() -> assertNotNull(r.getRondaBonus(),"Variable ronda bonus generada"),() -> assertTrue(r.getRondaBonus()>0 && r.getRondaBonus()<27,"rondaBonus valida"));
+	void testPregunta() {
+		fail("Not yet implemented");
 	}
 
 	@Test
-	void testGetRondaBonus() {
-		assertTrue(r.getRondaBonus()>0 && r.getRondaBonus()<27,"rondaBonus valida");
+	void testPreguntar() {
+		fail("Not yet implemented");
 	}
 
 	@Test
-	void testProcesoRonda() {
+	void testMostrarSolucion() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testRespuesta() {
 		fail("Not yet implemented");
 	}
 

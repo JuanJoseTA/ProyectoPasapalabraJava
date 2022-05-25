@@ -27,6 +27,10 @@ public class Ronda {
 	public boolean esBonus() {
 		return rondaBonus==numero || rondaBonus==numero+1;
 	}
+	public void sigRonda() {
+		numero++;
+	}
+	
 	public void procesoRonda(Jugador principal,Jugador rebote,Temporizador t) {
 		Pregunta p=new Pregunta(numero);
 		String r = null;

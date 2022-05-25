@@ -51,7 +51,15 @@ class RondaTest {
 	
 	@Test 
 	void testGetNumero() {
-		assertTrue(r.getNumero()>0 && r.getNumero()<27,"Número de ronda valido");
+		assertTrue(r.getNumero()>0 && r.getNumero()<27,"Nï¿½mero de ronda valido");
+	}
+	@Test
+	void testSigRonda() {
+		
+	}
+	@Test
+	void testEsBonus() {
+		
 	}
 	
 	

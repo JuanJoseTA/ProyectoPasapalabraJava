@@ -2,6 +2,8 @@ package pasadeporte;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.Random;
+
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -10,8 +12,13 @@ import org.junit.jupiter.api.Test;
 
 class PreguntaTest {
 
+	private static Pregunta preg;
+	private static Random r;
+
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
+		assertNull(preg.getPregunta(), "exito");
+		assertNull(preg.getSolucion(), "exito");
 	}
 
 	@AfterAll
@@ -20,10 +27,12 @@ class PreguntaTest {
 
 	@BeforeEach
 	void setUp() throws Exception {
+		preg = new Pregunta(r.nextInt(26));
 	}
 
 	@AfterEach
 	void tearDown() throws Exception {
+		preg = null;
 	}
 
 	@Test
@@ -32,18 +41,19 @@ class PreguntaTest {
 	}
 
 	@Test
-	void testPreguntar() {
+	void testGetPregunta() {
 		fail("Not yet implemented");
 	}
 
 	@Test
-	void testMostrarSolucion() {
+	void testGetSolucion() {
 		fail("Not yet implemented");
 	}
 
 	@Test
 	void testRespuesta() {
-		fail("Not yet implemented");
+		assertTrue(preg.respuesta(preg.getSolucion()), "Respuesta solución correcta");
+		assertFalse(preg.respuesta(" "), "Respuesta vacía correcta");
 	}
 
 }

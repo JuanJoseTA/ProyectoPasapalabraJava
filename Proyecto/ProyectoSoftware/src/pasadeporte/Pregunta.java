@@ -45,12 +45,12 @@ public class Pregunta {
 	      }
 	}
 	
-	public void preguntar() {
-		System.out.println(pregunta);
+	public String getPregunta() {
+		return pregunta;
 	}
 	
-	public void mostrarSolucion() {
-		System.out.println(solucion);
+	public String getSolucion() {
+		return solucion;
 	}
 	
 	public boolean respuesta(String respuesta) {

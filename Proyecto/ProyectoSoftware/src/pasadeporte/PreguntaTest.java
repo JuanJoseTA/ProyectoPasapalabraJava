@@ -6,6 +6,7 @@ import java.util.Random;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -17,8 +18,8 @@ class PreguntaTest {
 
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
-		assertNull(preg.getPregunta(), "exito");
-		assertNull(preg.getSolucion(), "exito");
+//		assertNull(preg.getPregunta(), "exito");
+//		assertNull(preg.getSolucion(), "exito");
 	}
 
 	@AfterAll
@@ -36,18 +37,13 @@ class PreguntaTest {
 	}
 
 	@Test
-	void testPregunta() {
-		fail("Not yet implemented");
-	}
-
-	@Test
 	void testGetPregunta() {
-		fail("Not yet implemented");
+		Assertions.assertNotNull(preg.getPregunta());
 	}
 
 	@Test
 	void testGetSolucion() {
-		fail("Not yet implemented");
+		Assertions.assertNotNull(preg.getSolucion());
 	}
 
 	@Test

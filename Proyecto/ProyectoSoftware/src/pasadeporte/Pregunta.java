@@ -37,7 +37,7 @@ public class Pregunta {
 			 }
 			 String cadena = br2.readLine();
 			 String delimitadores = "[;]";
-			 String[] palabrasSeparadas = cadena.split(delimitadores);
+		<	 String[] palabrasSeparadas = cadena.split(delimitadores);
 			 pregunta = palabrasSeparadas[0];
 			 solucion = palabrasSeparadas[1];
 		}catch(Exception e){

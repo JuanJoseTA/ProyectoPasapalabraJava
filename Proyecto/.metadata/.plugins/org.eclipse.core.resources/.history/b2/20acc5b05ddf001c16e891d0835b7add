@@ -35,7 +35,7 @@ public class Ronda {
 		Pregunta p=new Pregunta(numero);
 		String r = null;
 		System.out.println("Responde "+ principal.getNombre()+"\n");
-		System.out.println(p.getPregunta()+"\n");
+		p.preguntar();
 		t.iniciar();
 		while(t.tiempoPasado()<=15 && r==null) {
 		    try (Scanner sc = new Scanner(System.in)) {
@@ -52,6 +52,7 @@ public class Ronda {
 			 System.out.println("INCORRECTO, HAY REBOTE\n");
 			 System.out.println("Responde "+ rebote.getNombre()+"\n");
 			 System.out.println(p.getPregunta()+"\n");
+			 p.preguntar();
 			 t.reiniciar();
 			 t.iniciar();
 			 while(t.tiempoPasado()<=15 && r==null) {
@@ -68,7 +69,7 @@ public class Ronda {
 			  }else {
 				  System.out.println("INCORRECTO");
 				  System.out.println("La solucion correcta es: ");
-				  System.out.println(p.getSolucion()+"\n");
+				  p.mostrarSolucion();
 			  }
 		}
 	}

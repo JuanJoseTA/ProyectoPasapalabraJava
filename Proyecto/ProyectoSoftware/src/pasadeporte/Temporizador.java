@@ -43,5 +43,10 @@ public class Temporizador {
 			return (long) (tiempoPasado/Math.pow(10,9));
 	}
 
+	public boolean getAndando() {
+		// TODO Auto-generated method stub
+		return andando;
+	}
+
 
 }

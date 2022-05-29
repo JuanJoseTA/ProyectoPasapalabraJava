@@ -68,7 +68,7 @@ public class Ronda {
 			  }else {
 				  System.out.println("INCORRECTO");
 				  System.out.println("La solucion correcta es: ");
-				  System.out.println(p.getSolucion()+"\n");
+				  p.mostrarSolucion();
 			  }
 		}
 	}

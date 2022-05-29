@@ -9,6 +9,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class TemporizadorTest {
+	
+	Temporizador t=new Temporizador();
 
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
@@ -28,27 +30,32 @@ class TemporizadorTest {
 
 	@Test
 	void testTemporizador() {
-		fail("Not yet implemented");
+		
+		 assertNotNull(t.getAndando(),"Inicializado");
+		 assertNotNull(t.tiempoPasado(),"Inicializado");
 	}
 
 	@Test
 	void testReiniciar() {
-		fail("Not yet implemented");
+		 assertTrue(t.getAndando()==false);
+		 assertTrue(t.tiempoPasado()==0);
 	}
 
 	@Test
 	void testIniciar() {
-		fail("Not yet implemented");
+		assertTrue(t.getAndando()==true);
+		assertTrue(t.tiempoPasado()>0);
 	}
 
 	@Test
 	void testParar() {
-		fail("Not yet implemented");
+		 assertTrue(t.getAndando()==false);
+		 assertTrue(t.tiempoPasado()>0);
 	}
 
 	@Test
 	void testTiempoPasado() {
-		fail("Not yet implemented");
+		assertTrue(t.tiempoPasado()>0);
 	}
 
 }

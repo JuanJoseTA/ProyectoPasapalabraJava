@@ -6,3 +6,5 @@ Empieza por A: ¿Cual es el primer apellido del futbolista mas laureado de la hi
 Empieza por A: Cuando hay más agua entre los neumáticos y la carretera de la que puede ser desplazada por la banda de rodadura de neumáticos y este pierde el control.;Aquaplaning
 Empieza por A: Primer apellido del piloto español dos veces Campeón Mundial de Pilotos de Fórmula 1 en 2005 y 2006.;Alonso
 Contiene la A: Equipo de la NBA donde Pau Gasol ganó un anillo.;Lakers
+Empieza por A: Considerado el deporte organizado más antiguo del mundo. Abarca numerosas disciplinas agrupadas en carreras, saltos, lanzamientos y pruebas variadas;Atletismo
+Empieza por A: Deporte que se desarrolla sobre un tablero y que enfrenta a dos personas.;Ajedrez

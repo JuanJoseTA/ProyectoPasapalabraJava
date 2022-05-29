@@ -1,4 +1,4 @@
-Empieza con A: Persona que cuida de la aplicación del reglamento, sanciona las infracciones o fallos y valida los resultados.;sArbitro
+Empieza con A: Persona que cuida de la aplicación del reglamento, sanciona las infracciones o fallos y valida los resultados.;Arbitro
 Empieza con A: Color de la bandera mostrada en señal de peligro en Formula 1.;Amarilla
 Empieza con A: Es una parte fundamental en un coche de Formula 1 que existe en el eje delantero y el trasero;Aleron
 Empieza con A: Jugada de tenis en la que el jugador obtiene directamente un tanto al efectuar un saque sin que el adversario consiga tocar la pelota.;Ace

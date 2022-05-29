@@ -1,2 +1,3 @@
 Empieza con la P: ¿Cuál es el jugador de fútbol que ha ganado más Copas del Mundo?;Pele
 Empieza con la P: ¿Cómo se llama cuando un jugador de bolos hace tres strikes seguidos?;Pavo
+Empieza por P: ¿Cómo se denomina al jugador con mayor altura y fuerza en equipo de baloncesto?;Pívot

@@ -65,9 +65,9 @@ class RondaTest {
 		while(r.getNumero()!=r.getRondaBonus()) {
 			r.sigRonda();
 		}
-		assertTrue(r.esBonus(),"Comprobación de encontrarse en rondaBonus correcta parte 1");
+		assertTrue(r.esBonus());
 		r.sigRonda();
-		assertTrue(r.esBonus(),"Comprobación de encontrarse en rondaBonus correcta parte 2");
+		assertTrue(r.esBonus());
 		
 	}
 	

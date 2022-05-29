@@ -25,7 +25,7 @@ public class Ronda {
 		return numero;
 	}
 	public boolean esBonus() {
-		return numero==rondaBonus || numero==rondaBonus+1;
+		return rondaBonus==numero || rondaBonus==numero+1;
 	}
 	public void sigRonda() {
 		numero++;

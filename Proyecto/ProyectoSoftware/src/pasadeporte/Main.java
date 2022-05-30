@@ -1,5 +1,7 @@
 package pasadeporte;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
     	String alias1;
@@ -18,7 +20,10 @@ public class Main {
     	
     	
     	partida.iniciaLetras();
-    	partida.jugar(j1, j2,r, t);
+    	partida.jugar(j1, j2,r, t,teclado);
+    	
+    	System.out.println(j1.getNombre()+" ha terminado con "+j1.getPuntuacion()+" puntos");
+    	System.out.println(j2.getNombre()+" ha terminado con "+j2.getPuntuacion()+" puntos");
     	
     	partida.getResultado(j1, j2);
     	

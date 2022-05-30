@@ -3,6 +3,7 @@ package pasadeporte;
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
@@ -40,7 +41,7 @@ class PartidaTest {
 
 	@Test
 	void testIniciaLetras() {
-		ArrayList letras = p.getLetras();
+		List<Character> letras = p.getLetras();
 		boolean ok=true;
 		
 		for(int i=0;i<letras.size()&&!ok;i++) {
@@ -55,7 +56,7 @@ class PartidaTest {
 	@Test
 	void testJugar() {
 		boolean ok=true;
-		Ronda r;
+		Ronda r=new Ronda();
 		
 		if(r.getNumero()<=p.getLetras().size()) {
 			ok=false;

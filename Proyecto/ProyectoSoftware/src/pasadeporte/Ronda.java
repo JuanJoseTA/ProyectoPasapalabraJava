@@ -31,24 +31,32 @@ public class Ronda {
 		numero++;
 	}
 	
-	public void procesoRonda(Jugador principal,Jugador rebote,Temporizador t) {
+	public void procesoRonda(Jugador principal,Jugador rebote,Temporizador t,Scanner sc) {
+		if(esBonus()) {
+			System.out.println("RONDA BONUS!! (DOBLE PUNTUACION)\n");
+		}
 		Pregunta p=new Pregunta(numero);
 		String r = null;
 		System.out.println("Responde "+ principal.getNombre()+"\n");
 		System.out.println(p.getPregunta()+"\n");
+		t.reiniciar();
 		t.iniciar();
 		while(t.tiempoPasado()<=15 && r==null) {
-		    try (Scanner sc = new Scanner(System.in)) {
-		    r=sc.nextLine();
-		    }catch(InputMismatchException i) {
-		    System.err.println(i.getMessage());
+		    if(sc.hasNextLine()) {
+		    	  r=sc.nextLine();
+		    	  t.parar();
 		    }
-		    t.parar();
+		  
+		    
+		   
 		}
 		if(p.respuesta(r) && t.tiempoPasado()<=15){
 		    System.out.println("CORRECTO \n");
 		    principal.sumar(esBonus());
 		}else {
+			if(esBonus()) {
+				System.out.println("REBOTE CON BONUS!!");
+			}
 			 System.out.println("INCORRECTO, HAY REBOTE\n");
 			 System.out.println("Responde "+ rebote.getNombre()+"\n");
 			 System.out.println(p.getPregunta()+"\n");
@@ -56,12 +64,11 @@ public class Ronda {
 			 t.iniciar();
 			 r = null;
 			 while(t.tiempoPasado()<=15 && r==null) {
-				    try (Scanner sc = new Scanner(System.in)) {
-				    r=sc.nextLine();
-				    }catch(InputMismatchException i) {
-				    System.err.println(i.getMessage());
-				    }
-				    t.parar();
+				 if(sc.hasNextLine()) {
+			    	  r=sc.nextLine();
+			    	  t.parar();
+			      }
+				  
 			}
 			 if(p.respuesta(r) && t.tiempoPasado()<=15){
 				    System.out.println("CORRECTO \n");

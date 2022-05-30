@@ -7,3 +7,4 @@ Empieza con la C: Aro metálico sujeto horizontalmente a un tablero y del que pe
 Empieza con la C: Estilo es de forma alternada, mientras uno de los brazos del nadador se mueve en el aire con la palma hacia abajo dispuesta a ingresar al agua, y el codo relajado, el otro brazo avanza bajo el agua.;Crol
 Empieza con la C: ¿Cuántos jugadores hay en cancha por equipo en baloncesto?;Cinco 
 Empieza con la C: ¿Cada cuánto año se realizan los Juegos Olímpicos?;Cuatro
+Empieza con la C: Nombre de pila del conocido luchador de la UFC McGregor.;Conor

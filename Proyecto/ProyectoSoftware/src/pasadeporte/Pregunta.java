@@ -12,7 +12,6 @@ public class Pregunta {
 	
 	public Pregunta(int ronda) {
 		char letra = (char) (ronda + 96);
-		System.out.println(letra);
 		File archivo = null;
 		FileReader fr = null;
 		FileReader gr = null;

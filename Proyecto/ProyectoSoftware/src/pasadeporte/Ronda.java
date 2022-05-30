@@ -54,6 +54,7 @@ public class Ronda {
 			 System.out.println(p.getPregunta()+"\n");
 			 t.reiniciar();
 			 t.iniciar();
+			 r = null;
 			 while(t.tiempoPasado()<=15 && r==null) {
 				    try (Scanner sc = new Scanner(System.in)) {
 				    r=sc.nextLine();

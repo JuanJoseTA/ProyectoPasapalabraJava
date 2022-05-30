@@ -12,8 +12,10 @@ public class Pregunta {
 	
 	public Pregunta(int ronda) {
 		char letra = (char) (ronda + 96);
+		System.out.println(letra);
 		File archivo = null;
 		FileReader fr = null;
+		FileReader gr = null;
 	    BufferedReader br = null;
 	    BufferedReader br2 = null;
 	    int numPreg = 0;
@@ -24,11 +26,10 @@ public class Pregunta {
 	         // hacer una lectura comoda (disponer del metodo readLine()).
 	         archivo = new File (letra+".txt");
 	         fr = new FileReader (archivo);
+			 gr = new FileReader (archivo);
 	         br = new BufferedReader(fr);
-	         br2 = new BufferedReader(fr);
-	         while((br.readLine())!=null) {
-	            numPreg++;
-	         }
+	         br2 = new BufferedReader(gr);
+			 numPreg = (int) br.lines().count();
 	         numPregAl = r.nextInt(numPreg);
 	         int i = 0;
 	         while(i != numPregAl){
@@ -37,7 +38,7 @@ public class Pregunta {
 			 }
 			 String cadena = br2.readLine();
 			 String delimitadores = "[;]";
-		<	 String[] palabrasSeparadas = cadena.split(delimitadores);
+			 String[] palabrasSeparadas = cadena.split(delimitadores);
 			 pregunta = palabrasSeparadas[0];
 			 solucion = palabrasSeparadas[1];
 		}catch(Exception e){

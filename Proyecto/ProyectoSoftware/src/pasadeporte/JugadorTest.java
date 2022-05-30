@@ -1,25 +1,33 @@
 package pasadeporte;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class JugadorTest {
+	
+	private static Jugador jug;
+	private static String n = "exito";
+	private static Boolean a = true;
+	private static Boolean b = false;
+	private static int num;
 
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
+		jug = new Jugador(n);
 	}
 
 	@AfterAll
 	static void tearDownAfterClass() throws Exception {
+		
 	}
 
 	@BeforeEach
 	void setUp() throws Exception {
+		
 	}
 
 	@AfterEach
@@ -28,22 +36,28 @@ class JugadorTest {
 
 	@Test
 	void testJugador() {
-		fail("Not yet implemented");
+		Assertions.assertNotNull(jug.getNombre());
+		Assertions.assertNotNull(jug.getPuntuacion());
 	}
 
 	@Test
 	void testGetNombre() {
-		fail("Not yet implemented");
+		Assertions.assertTrue(jug.getNombre()==n);
 	}
 
 	@Test
 	void testGetPuntuacion() {
-		fail("Not yet implemented");
+		Assertions.assertFalse(jug.getPuntuacion()<0 || jug.getPuntuacion()>28);
 	}
 
 	@Test
 	void testSumar() {
-		fail("Not yet implemented");
+		
+		num=jug.getPuntuacion();
+		jug.sumar(a);
+		Assertions.assertTrue((jug.getPuntuacion()-2)==num);
+		num=jug.getPuntuacion();
+		jug.sumar(b);
+		Assertions.assertTrue((jug.getPuntuacion()-1)==num);	
 	}
-
 }

@@ -18,8 +18,8 @@ class PreguntaTest {
 
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
-//		assertNull(preg.getPregunta(), "exito");
-//		assertNull(preg.getSolucion(), "exito");
+		assertNull(preg.getPregunta(), "exito");
+		assertNull(preg.getSolucion(), "exito");
 	}
 
 	@AfterAll

@@ -1,3 +1,4 @@
+Empieza con la B: En baloncesto, el jugador que trae la pelota al otro lado de la cancha y corre la ofensiva se llama...;Base
 Empieza con la B: ¿Qué selección ha ganado mas mundiales de fútbol?;Brasil
 Empieza con la B: ¿Cual es el apellido del atleta que logró el récord plusmarca de velocidad en la prueba de los 100 metros lisos?;Bolt
 Empieza con la B: ¿Qué deporte practican los Harlem Globetrotters?;Baloncesto

@@ -1,1 +1,3 @@
+Contiene la Q: ¿Cuál es el deporte más popular en la India?;Criquet
+Empieza con Q: ¿Cuál era el nombre de los deportes ficticios en Harry Potter?;Quidditch
 Contiene la Q: Apellido del motociclista español con 8 títulos mundiales.;Marquez

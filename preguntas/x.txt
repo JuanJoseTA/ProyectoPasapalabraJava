@@ -1,2 +1,3 @@
 Contiene la X: ¿De qué deporte se han tomado expresiones como “tirar la toalla” o “salvado por la campana”?;Boxeo
 Contiene la X: Nombre de la jugadora ganadora del balón de oro en el año 2022.;Alexia
+Contiene la X: Apellido del deportista español que compitió en atletismo adaptado y ganó tres medallas de oro en los Juegos Paralímpicos de Verano en los años 2000 y 2012.;Exposito

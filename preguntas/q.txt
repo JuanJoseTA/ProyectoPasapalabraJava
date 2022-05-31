@@ -1,3 +1,6 @@
 Contiene la Q: ¿Cuál es el deporte más popular en la India?;Criquet
 Empieza con Q: ¿Cuál era el nombre de los deportes ficticios en Harry Potter?;Quidditch
 Contiene la Q: Apellido del motociclista español con 8 títulos mundiales.;Marquez
+Empieza con Q: En ingles, sesion en la que los pilotos marcan tiempo para establecer la parrilla de salida.;Qualifying
+Empieza con Q: En la F1, ultima ronda de la clasificacion.;Q3
+Empieza con Q: Apellido del piloto francés del equipo Monster Energy Yamaha en el Campeonato del Mundo de Motociclismo de MotoGP.;Quartararo

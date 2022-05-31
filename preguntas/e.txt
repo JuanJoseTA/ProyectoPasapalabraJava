@@ -6,3 +6,5 @@ Empieza con la E: Deporte de combate en el que se enfrentan dos contrincantes de
 Empieza con la E: Persona encargada de dirigir un equipo de deportistas.;Entrenador
 Empieza con la E: Posicion de un jugador de baloncesto.;Escolta
 Empieza con la E: Lugar donde se celebran eventos deportivos.;Estadio
+Empieza con la E: Arte de montar y manejar bien el caballo.;Equitacion
+Empieza con la E: Actividad o deporte que consiste en deslizarse con esquís sobre la nieve.;Esqui

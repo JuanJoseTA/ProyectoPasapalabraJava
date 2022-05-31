@@ -8,3 +8,4 @@ Empieza por B: Deporte que implica dos equipos, cada uno conformado por nueve ju
 Empieza por B: ¿En qué deporte fué campeona del mundo Carolina Marín?.;Badminton
 Empieza por B: ¿Dónde se disputaron los juegos Olímpicos de 1992?.;Barcelona
 Empieza por B: Nombre del futbolista que logró ser el jugador de campo con más apariciones consecutivas en la Premier League.;Brad
+Empieza por B: Deporte que consiste en la lucha a puñetazos de dos contendientes, de conformidad con ciertas reglas y utilizando guantes especiales.;Boxeo

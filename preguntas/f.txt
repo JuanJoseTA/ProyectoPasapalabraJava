@@ -4,3 +4,7 @@ Empieza por F: ¿Qué país ha competido mas veces en los JJOO de verano sin gan
 Empieza por la F: Equipo de F1 en el que corrió Michael Schumacher.;Ferrari
 Empieza por la F: ¿Manny Pacquiao es un boxeador legendario de qué país?;Filipinas
 Empieza por la F: Apellido del entrenador de futbol mas laureado de la historia.;Ferguson
+Empieza con la F: Elemento que es lanzado en el tiro con arco.;Flecha
+Empieza con la F: Futbolista italiano autor de un gol desde el centro del campo contra el FC Barcelona.;Florenzi
+Empieza con la F: Pais de nacimiento del conocido futbolista Karim Benzema.;Francia
+Empieza con la F: Acción que ocurre durante un partido de fútbol cuando hay una entrada sin balon.;Falta

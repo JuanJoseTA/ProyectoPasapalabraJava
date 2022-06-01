@@ -6,3 +6,5 @@ Empieza por la M: Nombre del atleta que ha ganado más medallas en la historia d
 Empieza por la M: Deporte que se practica montando en motocicleta.;Motociclismo
 Empieza con la M: Primer apellido del motociclista español que mas titulos acumula.;Marquez
 Empieza con la M: Primer apellido del autor de los dos unicos goles de la final de la champions de 2010.;Milito
+Empieza con la M: Carrera que de fondo de una longitud de 42 km.;Maraton
+Empieza con la M: Disciplina de atletismo que consiste en andar rapido sin llegar a correr.;Marcha

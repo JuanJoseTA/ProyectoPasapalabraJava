@@ -54,6 +54,8 @@ public class Pregunta {
 	}
 	
 	public boolean respuesta(String respuesta) {
-		return solucion.equalsIgnoreCase(respuesta);
+		String r = respuesta.toUpperCase();
+		String s = solucion.toUpperCase();
+		return s.equals(r);
 	}
 }

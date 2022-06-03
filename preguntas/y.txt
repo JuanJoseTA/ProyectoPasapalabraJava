@@ -5,4 +5,6 @@ Empieza por la Y: Jinete profesional de carreras de caballos.;Yoquey
 Empieza por la Y: Sistema de lucha japonés, que se practica como deporte y que también tiene por objeto saber defenderse sin armas.;Yudo
 Empieza por la Y: Deportista de Yudo.;Yudoca
 Empieza por la Y: Traje de tela fuerte y muy amplio, con el que se practica el yudo.;Yudogui
-
+Contiene la Y: Iconico jugador de futbol, que jugo en el barcelona, conocido como el padre del futbol moderno;Cruyff
+Empieza por la Y: Unico portero ganador de un balon de oro;Yashin
+Contiene la Y: Jugador que marco el gol contra Alemania, que dio el pase a España a la final del mundial de 2010;Puyol

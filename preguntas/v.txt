@@ -4,3 +4,7 @@ Empieza con la V: Apellido del futbolista mexicano del equipo Los Angeles Footba
 Empieza con la V: Primer nombre  piloto de F1 finlandés que debutó en Fórmula 1 en 2013 con el equipo Williams.;Valtteri
 Empieza con la V: Ventaja que se consigue del contrario o adversario.;Victoria
 Empieza con la V: En tiro al arco,se le llama a la mira que varía según sea la modalidad de precisión o de tiro instintivo.;Visor
+Empieza con la V: ¿Que color representa a Europa en los anillos de los juegos olimpicos?;Verde
+Contiene la V:¿En qué equipo hizo el futbolista colombiano James Rodríguez su debut deportivo?;Envigado
+Empieza con la V: Ley que se aplica en el futbol cuando existe una falta pero el equipo sigue con la posesion;Ventaja
+Contiene la V: ¿Cuál ha sido el único tenista en ganar los cuatro títulos del Grand Slam en el mismo año en dos ocasiones?;Laver

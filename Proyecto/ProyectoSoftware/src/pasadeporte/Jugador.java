@@ -1,5 +1,3 @@
-package pasadeporte;
-
 public class Jugador {
 
 	private String nombre;

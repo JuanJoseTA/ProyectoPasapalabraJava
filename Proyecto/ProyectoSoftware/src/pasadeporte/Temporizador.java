@@ -1,5 +1,3 @@
-package pasadeporte;
-
 public class Temporizador {
     private boolean andando;
 	private long tiempoInicio;

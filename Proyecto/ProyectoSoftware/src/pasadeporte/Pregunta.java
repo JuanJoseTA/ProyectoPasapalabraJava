@@ -1,8 +1,8 @@
-package pasadeporte;
-
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileReader;
+import java.io.InputStreamReader;
 import java.util.Random;
 
 public class Pregunta {
@@ -27,7 +27,7 @@ public class Pregunta {
 	         fr = new FileReader (archivo);
 			 gr = new FileReader (archivo);
 	         br = new BufferedReader(fr);
-	         br2 = new BufferedReader(gr);
+	         br2 = new BufferedReader(new InputStreamReader(new FileInputStream(archivo),"utf-8"));
 			 numPreg = (int) br.lines().count();
 	         numPregAl = r.nextInt(numPreg);
 	         int i = 0;
@@ -54,8 +54,6 @@ public class Pregunta {
 	}
 	
 	public boolean respuesta(String respuesta) {
-		String r = respuesta.toUpperCase();
-		String s = solucion.toUpperCase();
-		return s.equals(r);
+		return solucion.equalsIgnoreCase(respuesta);
 	}
 }

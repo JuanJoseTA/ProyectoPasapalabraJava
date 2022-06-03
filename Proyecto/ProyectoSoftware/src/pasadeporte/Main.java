@@ -1,15 +1,18 @@
-package pasadeporte;
+import java.io.UnsupportedEncodingException;
 
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+	private final static String cyan="\033[36m";
+	private final static String yellow="\033[33m";
+	private final static String reset="\u001B[0m";
+	public static void main(String[] args) throws UnsupportedEncodingException {
     	String alias1;
     	String alias2;
     	Scanner teclado=new Scanner(System.in);
-    	System.out.print("Nombre del jugador 1: ");
+    	System.out.print(cyan+"\nNombre del jugador 1: "+reset);
     	alias1=teclado.nextLine();
-    	System.out.print("\nNombre del jugador 2: ");
+    	System.out.print(yellow+"\nNombre del jugador 2: "+reset);
     	alias2=teclado.nextLine();
     	
     	Jugador j1= new Jugador(alias1);

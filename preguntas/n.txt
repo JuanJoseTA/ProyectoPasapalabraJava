@@ -4,3 +4,7 @@ Empieza con la N: Color de la última cinta que puedes conseguir en las artes ma
 Empieza con la N: Deporte mas practicado del mundo.;Natacion
 Empieza por la N: Primer apellido del tenista que mas veces ha ganado el torneo Roland Garros.;Nadal
 Empieza por la N: Primer apellido del piloto británico que milita en las filas de McLaren.;Norris
+Empieza por la N: Mascota de la Copa Mundial de Fútbol organizada por España en 1982.;Naranjito
+Empieza por la N: Portero alemán del Bayern de Munich que ganó su primera Champions League en 2013.;Neuer
+Empieza por la N: País de procedencia de Erling Haaland.;Noruega
+Empieza por la N: Leyenda del baloncesto español, destacado por su "La bomba ...".;Navarro

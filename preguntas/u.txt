@@ -1,3 +1,5 @@
 Empieza con la U: ¿Qué país ganó la primera Copa Mundial de fútbol en 1930?;Uruguay
 Empieza con la U: Gancho al mentón; golpe dado de abajo arriba.;Uppercut
 Empieza con la U: Pais de Africa que ha participado en 16 ediciones de los Juegos Olímpicos.;Uganda
+Empieza con la U: Nombre del club de baloncesto de Malaga.;Unicaja
+Empieza con la U: País al que pertenece el equipo Dinamo de Kiev.;Ucrania

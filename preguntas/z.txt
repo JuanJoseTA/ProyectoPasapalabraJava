@@ -1,7 +1,12 @@
 Contiene la Z: Apellido del boxeador infligió la primera derrota de Muhammad Ali en el boxeo profesional.;Frazier
-Empieza con la Z:Disciplina fitness creada a mediados de los años 90 que se realiza mediante movimientos de baile combinados con una serie de rutinas aeróbicas ...;Zumba
+Empieza con la Z: Disciplina fitness creada a mediados de los años 90 que se realiza mediante movimientos de baile combinados con una serie de rutinas aeróbicas ...;Zumba
 Empieza por Z: Cuerda que se arrolla al peón o trompo.;Zumbel
 Empieza por Z: Juego de naipes parecido al del cuatrillo.;Zanga
 Empieza por Z: Una de las formas de llamar al defensa de un equipo de futbol.;Zaguero
+Empieza por Z: Apellido del futbolista del inter que llevo en su camiseta 1+8 ya que el 9 estaba cogido.;Zamorano
+Empieza por Z: Elemento que esta prohibido en la mayoria de combates de artes marciales.;Zapatos
+Empieza por Z: Primer apellido del futbolista argentino que jugo en el Manchester City durante numerosas temporadas.;Zabaleta
+Empieza por Z: Primer apellido del futbolista italiano cuyo penalti fallado en la Euro 2016 supuso eliminación de Italia.;Zaza
+Contiene la Z: Portero titular de la Juventus de Turín que también jugó en el Arsenal.;Szczesny 
 
 

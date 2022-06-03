@@ -1,4 +1,5 @@
 Empieza con la G: ¿Cómo se llama la zona de hierba sobre la cual se ubica el hoyo en golf?;Green
 Empieza por la G: Deporte por el que es conocido John Ram.;Golf
 Empieza con la G: Consecuencia del ingreso de un balon en un arco o porteria en algunos deportes.;Gol
-Empieza con la G:
+Empieza con la G: País ganador de la Eurocopa de 2004.;Grecia
+Empieza con la G: 

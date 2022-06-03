@@ -2,4 +2,9 @@ Empieza con la G: ¿Cómo se llama la zona de hierba sobre la cual se ubica el h
 Empieza por la G: Deporte por el que es conocido John Ram.;Golf
 Empieza con la G: Consecuencia del ingreso de un balon en un arco o porteria en algunos deportes.;Gol
 Empieza con la G: País ganador de la Eurocopa de 2004.;Grecia
-Empieza con la G: 
+Empieza con la G: Una actividad física destinada al fortalecimiento y mantenimiento de una buena forma física.;Gimnasia
+Empieza con la G: Es el estilo nacional islandés de lucha tradicional.;Glima
+Empieza con la G: El único deporte paralímpico creado específicamente para personas ciegas y con discapacidad visual;Goalball
+Empieza con la G: Para que selección juega el futbolista Sadio Mané.;Ghana
+Empieza con la G: Jugador de futbol con el récord de no tocar la pelota en los 90 minutos de partido.;Giroud
+Empieza con la G: Nombre del extenista profesional argentino,ganador de 62 torneos de ATP.;Guillermo

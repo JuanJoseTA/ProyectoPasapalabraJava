@@ -89,10 +89,10 @@ public class Ronda {
 				  
 			}
 			 if(p.respuesta(r) && t.tiempoPasado()<=15){
-				    System.out.println("\nCORRECTO");
+				    System.out.println(green+"\nCORRECTO"+reset);
 				    rebote.sumar(esBonus());
 			  }else {
-				  System.err.println("\nINCORRECTO\n");
+				  System.err.println(red+"\nINCORRECTO\n"+reset);
 				  System.out.println("La solucion correcta es: "+p.getSolucion()+"\n");
 				
 			  }

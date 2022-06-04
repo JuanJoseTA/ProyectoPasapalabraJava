@@ -2,9 +2,8 @@ Empieza con la S: ¿En qué deporte se usan los Términos «pez rancio» y «pat
 Empieza con la S: ¿En qué equipo de la NBA estuvo Manu Ginobili entre 2002 y 2018?;Spurs
 Empieza con la S: ¿Qué equipo de fútbol español juega en el estadio El Molinón?;Sporting
 Empieza con la S: ¿Cuál es el deporte nacional en Japón?;Sumo
-Empieza con la S: En qué deporte se usan los Términos «pez rancio» y «patada de Mula»;Snowboarding
 Empieza con la S: Deporte que consiste en deslizarse sobre las olas del mar de pie sobre una tabla.;Surf
-Empieza con la S: Deporte que consiste en deslizarse sobre una tabla con ruedas y realizar diferentes trucos, levantando la tabla del suelo y haciendo figuras y piruetas con ella en el aire.;Skateboarding
+Empieza con la S: Deporte que consiste en deslizarse sobre una tabla con ruedas y realizar trucos en el aire.;Skateboarding
 Empieza con la S: Pelota enviada al bateador entre las axilas y las rodillas.;Strike
 Empieza con la S: Mate en tenis.;Smash
 Empieza con la S: Descenso en esquís por un camino sinuoso.;Slalom

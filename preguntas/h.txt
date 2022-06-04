@@ -1,4 +1,4 @@
-Empieza con la H: Nombre del lugar donde se realizan las carreras de caballo.;Hipodromo 
+Empieza con la H: Nombre del lugar donde se realizan las carreras de caballo.;Hipodromo
 Empieza con la H: ¿Cómo se llama el deporte en el cual se levantan pesas?;Halterofilia
 Empieza con la H: ¿A qué deporte pertenece el córner corto?;Hockey
 Empieza por la H: Deporte que consiste en carreras de caballos, concurso de saltos de obstáculos, doma, adiestramiento, etc.;Hipica

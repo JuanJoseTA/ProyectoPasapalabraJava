@@ -1,7 +1,7 @@
 Empieza con la T: ¿Cómo se llama la anotación de un tanto en fútbol americano?;Touchdown
 Empieza con la T: ¿Qué arte marcial coreano significa literalmente «el camino del pie y el puño»?;Taekwondo
 Empieza con la T: ¿En qué deporte pudieron participar las mujeres por primera en unos juegos olímpicos?;Tenis
-Empieza con la T: Deporte compuesto por otros tres.; Triatlon
+Empieza con la T: Deporte compuesto por otros tres.;Triatlon
 Empieza con la T: En rugby, ensayo.;Try
 Empieza con la T: En baloncesto, canasta que vale tres puntos.:Triple
 Empieza con la T: Especialidad de motorismo que se practica en el campo o en circuitos o accidentados o con obstáculos.;Trial

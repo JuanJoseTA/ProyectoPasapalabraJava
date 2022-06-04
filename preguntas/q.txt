@@ -7,4 +7,4 @@ Empieza con Q: Apellido del piloto francés del equipo Monster Energy Yamaha en 
 Contiene la Q: Nombre que recibe el casco en la hipica;Casquet
 Contiene la Q: Nombre que recibe el pivot en waterpolo;Piquet
 Contiene la Q: Como se llama a la posición a sentadillas, con flexión de piernas en Halterofilia;Squat
-Contiene la Q: Deporte de montaña que consiste en el deslizamiento por la nieve, por medio de dos tablas
+Contiene la Q: Deporte de montaña que consiste en el deslizamiento por la nieve, por medio de dos tablas.;Esqui

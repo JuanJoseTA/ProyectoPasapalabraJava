@@ -5,6 +5,6 @@ Empieza con K: Nombre del cocnocido futbolista francés que juega en el psg actu
 Contiene la K: Monopatinaje acuático o naútico.;Wakeskating
 Contiene la K: Barrido, barrida o segada (técnica de barrida para quitar la bola al contrario).;Tackle
 Empieza con K: persona que practica karate.;Karateca
-Contiene la K: modalidad de tiro al plato.;skeet
+Contiene la K: modalidad de tiro al plato.;Skeet
 Empieza con K: nombre de la leyenda del baloncesto Abdul-Jabbar.;Kareem
-Empieza con K: nombre del jugador de futbol ganador del balón de oro en 2007.;Kaka 
+Empieza con K: nombre del jugador de futbol ganador del balón de oro en 2007.;Kaka

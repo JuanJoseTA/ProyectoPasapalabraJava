@@ -5,7 +5,7 @@ Empieza con la L: Nombre (NO apellido) del mejor jugador de la historia del futb
 Empieza con la L: Nombre (NO apellido) del jugador de Los Lakers con 3 titulos;Lebron
 Empieza con la L: Nombre (NO apellido) del mejor jugador de la historia de los Boston Celtics;Larry
 Empieza con la L: Nombre (NO apellido) del portero ruso ganador de un balón de oro;Lev
-Empieza con la L: Nombre (NO apellido) del mejor delantero centro uruguayo de la historia;Luis 
+Empieza con la L: Nombre (NO apellido) del mejor delantero centro uruguayo de la historia;Luis
 Empieza con la L: Apellido del piloto monegasco de Formula 1 perteneciente a la Scuderia Ferrari;Leclerc
 Empieza con la L: Ciudad donde se disputaron los JJOO en 2012;Londres
 Conteiene la l: Ciudad donde se disputaron los JJOO en 1992;Barcelona

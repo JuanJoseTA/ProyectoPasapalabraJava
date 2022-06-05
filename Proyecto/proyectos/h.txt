@@ -1,0 +1,11 @@
+Empieza con la H: Nombre del lugar donde se realizan las carreras de caballo.;Hipodromo
+Empieza con la H: ¿Cómo se llama el deporte en el cual se levantan pesas?;Halterofilia
+Empieza con la H: ¿A qué deporte pertenece el córner corto?;Hockey
+Empieza por la H: Deporte que consiste en carreras de caballos, concurso de saltos de obstáculos, doma, adiestramiento, etc.;Hipica
+Empieza con la H: Primer apellido del portero colombiano conocido por sus paradas espectaculares.;Higuita
+Empieza por la H: Juego que se utiliza como balon un balon medicinal.;Hooverball
+Empieza con la H: Deporte de origen celta en el que se utilizan palos.;Hurling
+Empieza con la H: Ciudad en la que tienen su sede los Rockets de la nba.;Houston
+Empieza con la H: Apellido del jugador de baloncesto estadounidense que juega de base o escolta y que es conocido por su barba.;Harden
+Empieza con la H: Apellido del prometedor futbolista noruego recientemente traspasado al Manchester City.;Haaland
+

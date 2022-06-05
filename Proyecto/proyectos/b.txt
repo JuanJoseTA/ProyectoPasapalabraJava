@@ -1,0 +1,12 @@
+Empieza con la B: En baloncesto, el jugador que trae la pelota al otro lado de la cancha y corre la ofensiva se llama...;Base
+Empieza con la B: ¿Qué selección ha ganado mas mundiales de fútbol?;Brasil
+Empieza con la B: ¿Cual es el apellido del atleta que logró el récord plusmarca de velocidad en la prueba de los 100 metros lisos?;Bolt
+Empieza con la B: ¿Qué deporte practican los Harlem Globetrotters?;Baloncesto
+Empieza con la B: ¿En qué deporte puedes hacer una tacada?;Billar
+Empieza por B: Formación de ampollas en los neumáticos, causado por un uso excesivo.;Blistering
+Empieza por B: Lugar donde se produce la parada que hace un vehículo durante la competición para cambiar los neumáticos;Boxes
+Empieza por B: Deporte que implica dos equipos, cada uno conformado por nueve jugadores, los cuales con dos elementos: bate y pelota.;Beisbol
+Empieza por B: ¿En qué deporte fué campeona del mundo Carolina Marín?.;Badminton
+Empieza por B: ¿Dónde se disputaron los juegos Olímpicos de 1992?.;Barcelona
+Empieza por B: Nombre del futbolista que logró ser el jugador de campo con más apariciones consecutivas en la Premier League.;Brad
+Empieza por B: Deporte que consiste en la lucha a puñetazos de dos contendientes, de conformidad con ciertas reglas y utilizando guantes especiales.;Boxeo

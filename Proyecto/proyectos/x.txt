@@ -1,0 +1,10 @@
+Contiene la X: ¿De qué deporte se han tomado expresiones como “tirar la toalla” o “salvado por la campana”?;Boxeo
+Contiene la X: Nombre de la jugadora ganadora del balón de oro en el año 2022.;Alexia
+Contiene la X: Apellido del deportista español que compitió en atletismo y ganó tres medallas de oro en los Juegos Paralímpicos de Verano.;Exposito
+Contiene la X: Lateral izquierdo brasileño que jugo en el Barcelona entre los años 2009-2012.;Maxwell
+Empieza por X: Nombre del actual entredor del Futbol Club Barcelona;Xavi
+Contiene la X: Jugador profesional de Valorant español más famoso que milita en las filas de G2.;Mixwell
+Contiene la X: Nombre que recibe el deportista que se dedica al boxeo;Boxeador
+Contiene la X: Nombre del extremo chileno que ganó un título de liga con el Barcelona en el año 2012-13;Alexis
+Contiene la X: Club holandes histórico de fútbol;Ajax
+Contiene la X: Nombre que recibe el equipo de la NBA de Filadelfia;Sixers

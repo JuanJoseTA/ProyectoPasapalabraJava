@@ -3,7 +3,7 @@ Empieza con la T: ¿Qué arte marcial coreano significa literalmente «el camino
 Empieza con la T: ¿En qué deporte pudieron participar las mujeres por primera en unos juegos olímpicos?;Tenis
 Empieza con la T: Deporte compuesto por otros tres.;Triatlon
 Empieza con la T: En rugby, ensayo.;Try
-Empieza con la T: En baloncesto, canasta que vale tres puntos.:Triple
+Empieza con la T: En baloncesto, canasta que vale tres puntos.;Triple
 Empieza con la T: Especialidad de motorismo que se practica en el campo o en circuitos o accidentados o con obstáculos.;Trial
 Empieza con la T: Gimnasta o artista de circo que realiza ejercicios en el trapecio.;Trapecista
 Empieza con la T: Competición entre varios participantes.;Torneo

@@ -8,5 +8,5 @@ Empieza con la L: Nombre (NO apellido) del portero ruso ganador de un balón de 
 Empieza con la L: Nombre (NO apellido) del mejor delantero centro uruguayo de la historia;Luis
 Empieza con la L: Apellido del piloto monegasco de Formula 1 perteneciente a la Scuderia Ferrari;Leclerc
 Empieza con la L: Ciudad donde se disputaron los JJOO en 2012;Londres
-Conteiene la l: Ciudad donde se disputaron los JJOO en 1992;Barcelona
+Conteiene la L: Ciudad donde se disputaron los JJOO en 1992;Barcelona
 

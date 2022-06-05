@@ -93,7 +93,7 @@ public class Ronda {
                 rebote.sumar(esBonus());
             }else {
                 System.out.println(red+"\nINCORRECTO\n"+reset);
-                System.out.println("La solucion correcta es: "+p.getSolucion()+"\n");
+                System.out.println("La solución correcta es: "+p.getSolucion()+"\n");
 
             }
         }
